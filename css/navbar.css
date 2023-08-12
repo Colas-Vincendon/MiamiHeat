@@ -57,6 +57,7 @@
 #navbar ul li a {
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 2px;
   text-decoration-line: none;
   color: rgb(0, 0, 0);
   transition: 0.1s ease-in-out;
