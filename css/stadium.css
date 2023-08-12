@@ -1,0 +1,427 @@
+/* The webpage overall styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,300);
+
+/*  This is for styling the main container that holds everything */
+
+#container {
+  height: 120vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/miamiNight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* This styles the navbar and its contents */
+
+#navbar {
+  z-index: 2;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background: #00caff;
+  background: linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+  background: -webkit-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+  background: -moz-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+}
+
+/* This styles the logo in the navbar */
+
+#navbar #logo {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 3%;
+  top: -5px;
+}
+
+/* This styles the logo image to be used in the navbar */
+
+#navbar #logo img {
+  object-fit: cover;
+  height: 60px;
+  width: auto;
+}
+
+/* This styles the unlisted links in the navbar */
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+
+#navbar ul li {
+  height: 60px;
+  width: 80px;
+  margin: 0 30px;
+  display: grid;
+  place-items: center;
+  color: antiquewhite;
+}
+#navbar ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+/* This sets the hover action of the navbar links */
+
+#navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#icons {
+  z-index: 3;
+  position: absolute;
+  top: -100px;
+  height: 290px;
+  width: 140px;
+  background: none;
+  margin-left: 2%;
+  top: calc(50% - 250px);
+  display: flex;
+  align-items: center;
+}
+
+/* This styles the social media icons logos*/
+
+#icons #iconsLogo {
+  height: 300px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This styles the social media icons logos images*/
+
+#icons #iconsLogo i {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(80, 174, 236);
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#icons #iconsLogo i:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+#icons #iconsLogo i:hover {
+  color: rgb(70, 185, 219);
+  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+
+.videoMiami {
+  position: absolute;
+  top: 100px;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.btnSound {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(3, 3, 32);
+  color: rgb(80, 174, 236);
+  border-radius: 0 0 15px 0;
+  border: 1px solid rgb(80, 174, 236);
+  margin-bottom: 10px;
+}
+
+/* .frame {
+  position: absolute;
+  top: 900px;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #e16e6c00;
+  color: #000000;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.circle {
+  position: absolute;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  top: 200px;
+  left: 175px;
+  background: #000000;
+  border-radius: 50%;
+  animation: circle 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.line {
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  height: 4px;
+  top: 223px;
+  background: #000000;
+  transform: scaleX(0);
+
+  &.left {
+    left: 50px;
+    transform-origin: 100% 50%;
+    animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
+  }
+
+  &.right {
+    right: 50px;
+    transform-origin: 0% 50%;
+    animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s;
+  }
+}
+
+.bracket {
+  position: absolute;
+  z-index: 10;
+  height: 120px;
+  width: 4px;
+  top: 165px;
+  background: #000000;
+  animation: bracket 0.4s ease-out 1.7s;
+  animation-fill-mode: both;
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background: #000000;
+  }
+
+  &.left {
+    left: 50px;
+
+    &:before {
+      top: 0;
+      left: 0;
+      transform-origin: 0% 50%;
+      animation: bracket-line 0.2s ease-out 2.1s;
+      animation-fill-mode: both;
+    }
+
+    &:after {
+      bottom: 0;
+      left: 0;
+      transform-origin: 0% 50%;
+      animation: bracket-line 0.2s ease-out 2.1s;
+      animation-fill-mode: both;
+    }
+  }
+
+  &.right {
+    right: 50px;
+
+    &:before {
+      top: 0;
+      right: 0;
+      transform-origin: 100% 50%;
+      animation: bracket-line 0.2s ease-out 2.1s;
+      animation-fill-mode: both;
+    }
+
+    &:after {
+      bottom: 0;
+      right: 0;
+      transform-origin: 100% 50%;
+      animation: bracket-line 0.2s ease-out 2.1s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.big {
+  position: absolute;
+  z-index: 5;
+  top: 173px;
+  width: 400px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 50px;
+  color: #000000;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.hide {
+  position: absolute;
+  z-index: 7;
+  width: 400px;
+  height: 50px;
+  background: #e16e6c00;
+  left: 0;
+  animation: reveal 0.4s ease-out 1.7s;
+  animation-fill-mode: both;
+
+  &.top {
+    bottom: 49%;
+    transform-origin: 50% 0%;
+  }
+
+  &.bottom {
+    top: 49%;
+    transform-origin: 50% 100%;
+  }
+}
+
+.small {
+  position: absolute;
+  z-index: 10;
+  width: 400px;
+  text-align: center;
+  left: 0;
+  font-weight: 300;
+  font-size: 30px;
+  color: #000000;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &.top {
+    top: 140px;
+    animation: small-top 0.5s ease-out 2.2s;
+    animation-fill-mode: both;
+  }
+
+  &.bottom {
+    bottom: 85px;
+    animation: small-bottom 0.5s ease-out 2.2s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  90%,
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lines {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes line-left {
+  0% {
+    transform-origin: 100% 50%;
+  }
+  50%,
+  100% {
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes line-right {
+  0% {
+    transform-origin: 0% 50%;
+  }
+  50%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+}
+
+@keyframes bracket {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes bracket-line {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes small-top {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes small-bottom {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */

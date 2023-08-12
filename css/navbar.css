@@ -1,0 +1,117 @@
+/* This styles the navbar and its contents */
+
+#navbar {
+  z-index: 2;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  background: #00caff;
+  background: linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+  background: -webkit-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+  background: -moz-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+}
+
+/* This styles the logo in the navbar */
+
+#navbar #logo {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 3%;
+  top: -5px;
+}
+
+/* This styles the logo image to be used in the navbar */
+
+#navbar #logo img {
+  object-fit: cover;
+  height: 60px;
+  width: auto;
+}
+
+/* This styles the unlisted links in the navbar */
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+
+#navbar ul li {
+  height: 60px;
+  width: 80px;
+  margin: 0 30px;
+  display: grid;
+  place-items: center;
+  color: antiquewhite;
+}
+#navbar ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+/* This sets the hover action of the navbar links */
+
+#navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+.navbar-nav {
+  text-align: center;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff70f8;
+  border: 2px solid rgb(231, 231, 231);
+}
+
+@media screen and (max-width: 767px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 25%;
+  }
+  #navbar ul li {
+    margin: 0 30px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+  #navbar ul li a {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.2rem;
+    z-index: 9999;
+    height: 247px;
+    width: 200px;
+    background: #00caff;
+    background: linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+    background: -webkit-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+    background: -moz-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
+    border: 4px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

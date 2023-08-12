@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIAMI HEAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/rotateNBA.css" />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id="container" class="container-fluid">
+      <!-- Navbar container -->
+      <div class="row">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid d-flex justify-content-center">
+            <div id="navbar">
+              <div id="logo">
+                <a href="index.html">
+                  <img class="imgLogo" src="assets/logo.png" alt="logo" />
+                </a>
+              </div>
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse"
+                id="navbarText"
+                style="z-index: 9999"
+              >
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a href="team.html">TEAM</a></li>
+                  <li class="nav-item"><a href="stadium.html">STADIUM</a></li>
+                  <li class="nav-item"><a href="#">SHOP</a></li>
+                  <li class="nav-item"><a href="#">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div class="col-12 col-md-6">
+          <div id="content">
+            <h2 class="shadow">MIAMI HEAT</h2>
+            <h2 class="textH2">MIAMI HEAT</h2>
+            <p class="fromLeft">KASEYA CENTER ON FIRE !</p>
+          </div>
+          <!-- Social media icons -->
+          <!-- This is for holding some company's social media icons and related links -->
+          <div id="icons">
+            <div id="iconsLogo">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+        <div class="col-12 col-md-6">
+          <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <img id="loop" src="./assets/hoop2.png" alt="" />
+            <model-viewer
+              src="assets/scene.gltf"
+              alt="VR Headset"
+              auto-rotate
+              camera-controls
+              ar
+              ios-src="assets/scene.gltf"
+              interaction-prompt="none"
+            >
+            </model-viewer>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="team.html">
+          <button class="enter"><i>ENTRER</i></button>
+        </a>
+      </div>
+
+      <div class="rotate">
+        <div
+          class="circular circular--solid"
+          style="--shadow-color: #ababab; filter: blur(1px); opacity: 0.7"
+        >
+          <span class="text" data-idx="0">N</span
+          ><span class="text" data-idx="1">B</span
+          ><span class="text" data-idx="2">A</span
+          ><span class="text" data-idx="3"> </span
+          ><span class="text" data-idx="4">N</span>
+          <span class="text" data-idx="5">B</span>
+          <span class="text" data-idx="6">A</span
+          ><span class="text" data-idx="7"> </span
+          ><span class="text" data-idx="8">N</span
+          ><span class="text" data-idx="9">B</span
+          ><span class="text" data-idx="10">A</span>
+          <span class="text" data-idx="11"> </span>
+          <span class="text" data-idx="12">N</span
+          ><span class="text" data-idx="13">B</span
+          ><span class="text" data-idx="14">A</span
+          ><span class="text" data-idx="15"> </span
+          ><span class="text" data-idx="16">N</span>
+          <span class="text" data-idx="17">B</span>
+          <span class="text" data-idx="18">A</span
+          ><span class="text" data-idx="19"> </span
+          ><span class="text" data-idx="20">N</span
+          ><span class="text" data-idx="21">B</span
+          ><span class="text" data-idx="22">A</span
+          ><span class="text" data-idx="23"> </span>
+        </div>
+      </div>
+      <div class="rotate">
+        <div class="circular">
+          <span class="text" style="color: lightskyblue" data-idx="0">N</span
+          ><span class="text" data-idx="1">B</span
+          ><span class="text" style="color: lightskyblue" data-idx="2">A</span
+          ><span class="text" data-idx="3"> </span
+          ><span class="text" data-idx="4">N</span>
+          <span class="text" style="color: lightskyblue" data-idx="5">B</span>
+          <span class="text" data-idx="6">A</span
+          ><span class="text" data-idx="7"> </span
+          ><span class="text" style="color: lightskyblue" data-idx="8">N</span
+          ><span class="text" data-idx="9">B</span
+          ><span class="text" style="color: lightskyblue" data-idx="10">A</span>
+          <span class="text" data-idx="11"> </span>
+          <span class="text" data-idx="12">N</span
+          ><span class="text" style="color: lightskyblue" data-idx="13">B</span
+          ><span class="text" data-idx="14">A</span
+          ><span class="text" data-idx="15"> </span
+          ><span class="text" style="color: lightskyblue" data-idx="16">N</span>
+          <span class="text" data-idx="17">B</span>
+          <span class="text" style="color: lightskyblue" data-idx="18">A</span
+          ><span class="text" data-idx="19"> </span
+          ><span class="text" data-idx="20">N</span
+          ><span class="text" style="color: lightskyblue" data-idx="21">B</span
+          ><span class="text" data-idx="22">A</span
+          ><span class="text" data-idx="23"> </span>
+        </div>
+      </div>
+      <div class="spots">
+        <div class="spotDroite">
+          <img class="img-fluid" src="./assets/spotDroite.png" alt="" />
+        </div>
+        <div class="spotGauche">
+          <img class="img-fluid" src="./assets/spotGauche.png" alt="" />
+        </div>
+      </div>
+      <div class="lights">
+        <div class="lightDroite"></div>
+        <div class="lightGauche"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9468c33ba3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelector("body").style.overflow = "hidden";
+
+      setTimeout(function () {
+        document.querySelector("body").style.overflow = "auto";
+      }, 3000); // 3000 millisecondes soit 3 secondes
+    </script>
+    <script>
+      let textH2 = document.querySelector(".textH2");
+      let shadowText = document.querySelector(".shadow");
+
+      textH2.addEventListener("mouseenter", function () {
+        shadowText.classList.add("shadow-change-color");
+      });
+
+      textH2.addEventListener("mouseleave", function () {
+        shadowText.classList.remove("shadow-change-color");
+      });
+    </script>
+  </body>
+</html>

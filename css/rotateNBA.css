@@ -1,0 +1,1097 @@
+.text {
+  font-size: 4rem;
+  font-family: Kanit, sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 161, 208);
+  text-stroke: 2px var(--shadow-color, #282828);
+  -webkit-text-stroke: 2px var(--shadow-color, #282828);
+  letter-spacing: 3px;
+  transform: scaleX(0.5);
+  -webkit-animation: stagger 2.5s steps(25) alternate infinite;
+  animation: stagger 2.5s steps(25) alternate infinite;
+}
+@-webkit-keyframes stagger {
+  0% {
+    text-shadow: -0.3333333333px 0.3px var(--shadow-color, #282828),
+      -0.6666666667px 0.6px var(--shadow-color, #282828),
+      -1px 0.9px var(--shadow-color, #282828),
+      -1.3333333333px 1.2px var(--shadow-color, #282828),
+      -1.6666666667px 1.5px var(--shadow-color, #282828),
+      -2px 1.8px var(--shadow-color, #282828),
+      -2.3333333333px 2.1px var(--shadow-color, #282828),
+      -2.6666666667px 2.4px var(--shadow-color, #282828),
+      -3px 2.7px var(--shadow-color, #282828),
+      -3.3333333333px 3px var(--shadow-color, #282828),
+      -3.6666666667px 3.3px var(--shadow-color, #282828),
+      -4px 3.6px var(--shadow-color, #282828),
+      -4.3333333333px 3.9px var(--shadow-color, #282828),
+      -4.6666666667px 4.2px var(--shadow-color, #282828),
+      -5px 4.5px var(--shadow-color, #282828),
+      -5.3333333333px 4.8px var(--shadow-color, #282828);
+  }
+  4% {
+    text-shadow: -0.3307049004px 0.3px var(--shadow-color, #282828),
+      -0.6614098009px 0.6px var(--shadow-color, #282828),
+      -0.9921147013px 0.9px var(--shadow-color, #282828),
+      -1.3228196018px 1.2px var(--shadow-color, #282828),
+      -1.6535245022px 1.5px var(--shadow-color, #282828),
+      -1.9842294026px 1.8px var(--shadow-color, #282828),
+      -2.3149343031px 2.1px var(--shadow-color, #282828),
+      -2.6456392035px 2.4px var(--shadow-color, #282828),
+      -2.9763441039px 2.7px var(--shadow-color, #282828),
+      -3.3070490044px 3px var(--shadow-color, #282828),
+      -3.6377539048px 3.3px var(--shadow-color, #282828),
+      -3.9684588053px 3.6px var(--shadow-color, #282828),
+      -4.2991637057px 3.9px var(--shadow-color, #282828),
+      -4.6298686061px 4.2px var(--shadow-color, #282828),
+      -4.9605735066px 4.5px var(--shadow-color, #282828);
+  }
+  8% {
+    text-shadow: -0.3228610537px 0.3px var(--shadow-color, #282828),
+      -0.6457221074px 0.6px var(--shadow-color, #282828),
+      -0.9685831611px 0.9px var(--shadow-color, #282828),
+      -1.2914442148px 1.2px var(--shadow-color, #282828),
+      -1.6143052685px 1.5px var(--shadow-color, #282828),
+      -1.9371663223px 1.8px var(--shadow-color, #282828),
+      -2.260027376px 2.1px var(--shadow-color, #282828),
+      -2.5828884297px 2.4px var(--shadow-color, #282828),
+      -2.9057494834px 2.7px var(--shadow-color, #282828),
+      -3.2286105371px 3px var(--shadow-color, #282828),
+      -3.5514715908px 3.3px var(--shadow-color, #282828),
+      -3.8743326445px 3.6px var(--shadow-color, #282828),
+      -4.1971936982px 3.9px var(--shadow-color, #282828),
+      -4.5200547519px 4.2px var(--shadow-color, #282828);
+  }
+  12% {
+    text-shadow: -0.3099254953px 0.3px var(--shadow-color, #282828),
+      -0.6198509906px 0.6px var(--shadow-color, #282828),
+      -0.9297764859px 0.9px var(--shadow-color, #282828),
+      -1.2397019812px 1.2px var(--shadow-color, #282828),
+      -1.5496274765px 1.5px var(--shadow-color, #282828),
+      -1.8595529718px 1.8px var(--shadow-color, #282828),
+      -2.1694784671px 2.1px var(--shadow-color, #282828),
+      -2.4794039624px 2.4px var(--shadow-color, #282828),
+      -2.7893294577px 2.7px var(--shadow-color, #282828),
+      -3.099254953px 3px var(--shadow-color, #282828),
+      -3.4091804483px 3.3px var(--shadow-color, #282828),
+      -3.7191059436px 3.6px var(--shadow-color, #282828),
+      -4.0290314388px 3.9px var(--shadow-color, #282828),
+      -4.3389569341px 4.2px var(--shadow-color, #282828),
+      -4.6488824294px 4.5px var(--shadow-color, #282828),
+      -4.9588079247px 4.8px var(--shadow-color, #282828);
+  }
+  16% {
+    text-shadow: -0.2921022267px 0.3px var(--shadow-color, #282828),
+      -0.5842044534px 0.6px var(--shadow-color, #282828),
+      -0.87630668px 0.9px var(--shadow-color, #282828),
+      -1.1684089067px 1.2px var(--shadow-color, #282828),
+      -1.4605111334px 1.5px var(--shadow-color, #282828),
+      -1.7526133601px 1.8px var(--shadow-color, #282828),
+      -2.0447155868px 2.1px var(--shadow-color, #282828),
+      -2.3368178135px 2.4px var(--shadow-color, #282828),
+      -2.6289200401px 2.7px var(--shadow-color, #282828),
+      -2.9210222668px 3px var(--shadow-color, #282828),
+      -3.2131244935px 3.3px var(--shadow-color, #282828),
+      -3.5052267202px 3.6px var(--shadow-color, #282828),
+      -3.7973289469px 3.9px var(--shadow-color, #282828),
+      -4.0894311735px 4.2px var(--shadow-color, #282828),
+      -4.3815334002px 4.5px var(--shadow-color, #282828);
+  }
+  20% {
+    text-shadow: -0.2696723315px 0.3px var(--shadow-color, #282828),
+      -0.5393446629px 0.6px var(--shadow-color, #282828),
+      -0.8090169944px 0.9px var(--shadow-color, #282828),
+      -1.0786893258px 1.2px var(--shadow-color, #282828),
+      -1.3483616573px 1.5px var(--shadow-color, #282828),
+      -1.6180339887px 1.8px var(--shadow-color, #282828),
+      -1.8877063202px 2.1px var(--shadow-color, #282828),
+      -2.1573786517px 2.4px var(--shadow-color, #282828),
+      -2.4270509831px 2.7px var(--shadow-color, #282828),
+      -2.6967233146px 3px var(--shadow-color, #282828),
+      -2.966395646px 3.3px var(--shadow-color, #282828),
+      -3.2360679775px 3.6px var(--shadow-color, #282828),
+      -3.505740309px 3.9px var(--shadow-color, #282828),
+      -3.7754126404px 4.2px var(--shadow-color, #282828),
+      -4.0450849719px 4.5px var(--shadow-color, #282828),
+      -4.3147573033px 4.8px var(--shadow-color, #282828);
+  }
+  24% {
+    text-shadow: -0.2429895425px 0.3px var(--shadow-color, #282828),
+      -0.4859790849px 0.6px var(--shadow-color, #282828),
+      -0.7289686274px 0.9px var(--shadow-color, #282828),
+      -0.9719581699px 1.2px var(--shadow-color, #282828),
+      -1.2149477124px 1.5px var(--shadow-color, #282828),
+      -1.4579372548px 1.8px var(--shadow-color, #282828),
+      -1.7009267973px 2.1px var(--shadow-color, #282828),
+      -1.9439163398px 2.4px var(--shadow-color, #282828),
+      -2.1869058823px 2.7px var(--shadow-color, #282828),
+      -2.4298954247px 3px var(--shadow-color, #282828),
+      -2.6728849672px 3.3px var(--shadow-color, #282828),
+      -2.9158745097px 3.6px var(--shadow-color, #282828),
+      -3.1588640522px 3.9px var(--shadow-color, #282828),
+      -3.4018535946px 4.2px var(--shadow-color, #282828);
+  }
+  28% {
+    text-shadow: -0.2124746632px 0.3px var(--shadow-color, #282828),
+      -0.4249493265px 0.6px var(--shadow-color, #282828),
+      -0.6374239897px 0.9px var(--shadow-color, #282828),
+      -0.849898653px 1.2px var(--shadow-color, #282828),
+      -1.0623733162px 1.5px var(--shadow-color, #282828),
+      -1.2748479795px 1.8px var(--shadow-color, #282828),
+      -1.4873226427px 2.1px var(--shadow-color, #282828),
+      -1.699797306px 2.4px var(--shadow-color, #282828),
+      -1.9122719692px 2.7px var(--shadow-color, #282828),
+      -2.1247466325px 3px var(--shadow-color, #282828),
+      -2.3372212957px 3.3px var(--shadow-color, #282828),
+      -2.549695959px 3.6px var(--shadow-color, #282828),
+      -2.7621706222px 3.9px var(--shadow-color, #282828),
+      -2.9746452855px 4.2px var(--shadow-color, #282828);
+  }
+  32% {
+    text-shadow: -0.1786089317px 0.3px var(--shadow-color, #282828),
+      -0.3572178633px 0.6px var(--shadow-color, #282828),
+      -0.535826795px 0.9px var(--shadow-color, #282828),
+      -0.7144357266px 1.2px var(--shadow-color, #282828),
+      -0.8930446583px 1.5px var(--shadow-color, #282828),
+      -1.07165359px 1.8px var(--shadow-color, #282828),
+      -1.2502625216px 2.1px var(--shadow-color, #282828),
+      -1.4288714533px 2.4px var(--shadow-color, #282828),
+      -1.6074803849px 2.7px var(--shadow-color, #282828),
+      -1.7860893166px 3px var(--shadow-color, #282828),
+      -1.9646982483px 3.3px var(--shadow-color, #282828),
+      -2.1433071799px 3.6px var(--shadow-color, #282828),
+      -2.3219161116px 3.9px var(--shadow-color, #282828),
+      -2.5005250432px 4.2px var(--shadow-color, #282828),
+      -2.6791339749px 4.5px var(--shadow-color, #282828);
+  }
+  36% {
+    text-shadow: -0.1419264305px 0.3px var(--shadow-color, #282828),
+      -0.283852861px 0.6px var(--shadow-color, #282828),
+      -0.4257792916px 0.9px var(--shadow-color, #282828),
+      -0.5677057221px 1.2px var(--shadow-color, #282828),
+      -0.7096321526px 1.5px var(--shadow-color, #282828),
+      -0.8515585831px 1.8px var(--shadow-color, #282828),
+      -0.9934850137px 2.1px var(--shadow-color, #282828),
+      -1.1354114442px 2.4px var(--shadow-color, #282828),
+      -1.2773378747px 2.7px var(--shadow-color, #282828),
+      -1.4192643052px 3px var(--shadow-color, #282828),
+      -1.5611907357px 3.3px var(--shadow-color, #282828),
+      -1.7031171663px 3.6px var(--shadow-color, #282828),
+      -1.8450435968px 3.9px var(--shadow-color, #282828),
+      -1.9869700273px 4.2px var(--shadow-color, #282828),
+      -2.1288964578px 4.5px var(--shadow-color, #282828);
+  }
+  40% {
+    text-shadow: -0.1030056648px 0.3px var(--shadow-color, #282828),
+      -0.2060113296px 0.6px var(--shadow-color, #282828),
+      -0.3090169944px 0.9px var(--shadow-color, #282828),
+      -0.4120226592px 1.2px var(--shadow-color, #282828),
+      -0.515028324px 1.5px var(--shadow-color, #282828),
+      -0.6180339887px 1.8px var(--shadow-color, #282828),
+      -0.7210396535px 2.1px var(--shadow-color, #282828),
+      -0.8240453183px 2.4px var(--shadow-color, #282828),
+      -0.9270509831px 2.7px var(--shadow-color, #282828),
+      -1.0300566479px 3px var(--shadow-color, #282828),
+      -1.1330623127px 3.3px var(--shadow-color, #282828),
+      -1.2360679775px 3.6px var(--shadow-color, #282828),
+      -1.3390736423px 3.9px var(--shadow-color, #282828),
+      -1.4420793071px 4.2px var(--shadow-color, #282828),
+      -1.5450849719px 4.5px var(--shadow-color, #282828);
+  }
+  44% {
+    text-shadow: -0.0624604382px 0.3px var(--shadow-color, #282828),
+      -0.1249208764px 0.6px var(--shadow-color, #282828),
+      -0.1873813146px 0.9px var(--shadow-color, #282828),
+      -0.2498417528px 1.2px var(--shadow-color, #282828),
+      -0.312302191px 1.5px var(--shadow-color, #282828),
+      -0.3747626292px 1.8px var(--shadow-color, #282828),
+      -0.4372230674px 2.1px var(--shadow-color, #282828),
+      -0.4996835056px 2.4px var(--shadow-color, #282828),
+      -0.5621439438px 2.7px var(--shadow-color, #282828),
+      -0.624604382px 3px var(--shadow-color, #282828),
+      -0.6870648201px 3.3px var(--shadow-color, #282828),
+      -0.7495252583px 3.6px var(--shadow-color, #282828),
+      -0.8119856965px 3.9px var(--shadow-color, #282828),
+      -0.8744461347px 4.2px var(--shadow-color, #282828),
+      -0.9369065729px 4.5px var(--shadow-color, #282828);
+  }
+  48% {
+    text-shadow: -0.0209301732px 0.3px var(--shadow-color, #282828),
+      -0.0418603464px 0.6px var(--shadow-color, #282828),
+      -0.0627905195px 0.9px var(--shadow-color, #282828),
+      -0.0837206927px 1.2px var(--shadow-color, #282828),
+      -0.1046508659px 1.5px var(--shadow-color, #282828),
+      -0.1255810391px 1.8px var(--shadow-color, #282828),
+      -0.1465112122px 2.1px var(--shadow-color, #282828),
+      -0.1674413854px 2.4px var(--shadow-color, #282828),
+      -0.1883715586px 2.7px var(--shadow-color, #282828),
+      -0.2093017318px 3px var(--shadow-color, #282828),
+      -0.2302319049px 3.3px var(--shadow-color, #282828),
+      -0.2511620781px 3.6px var(--shadow-color, #282828),
+      -0.2720922513px 3.9px var(--shadow-color, #282828),
+      -0.2930224245px 4.2px var(--shadow-color, #282828),
+      -0.3139525976px 4.5px var(--shadow-color, #282828);
+  }
+  52% {
+    text-shadow: 0.0209301732px 0.3px var(--shadow-color, #282828),
+      0.0418603464px 0.6px var(--shadow-color, #282828),
+      0.0627905195px 0.9px var(--shadow-color, #282828),
+      0.0837206927px 1.2px var(--shadow-color, #282828),
+      0.1046508659px 1.5px var(--shadow-color, #282828),
+      0.1255810391px 1.8px var(--shadow-color, #282828),
+      0.1465112122px 2.1px var(--shadow-color, #282828),
+      0.1674413854px 2.4px var(--shadow-color, #282828),
+      0.1883715586px 2.7px var(--shadow-color, #282828),
+      0.2093017318px 3px var(--shadow-color, #282828),
+      0.2302319049px 3.3px var(--shadow-color, #282828),
+      0.2511620781px 3.6px var(--shadow-color, #282828),
+      0.2720922513px 3.9px var(--shadow-color, #282828),
+      0.2930224245px 4.2px var(--shadow-color, #282828),
+      0.3139525976px 4.5px var(--shadow-color, #282828);
+  }
+  56% {
+    text-shadow: 0.0624604382px 0.3px var(--shadow-color, #282828),
+      0.1249208764px 0.6px var(--shadow-color, #282828),
+      0.1873813146px 0.9px var(--shadow-color, #282828),
+      0.2498417528px 1.2px var(--shadow-color, #282828),
+      0.312302191px 1.5px var(--shadow-color, #282828),
+      0.3747626292px 1.8px var(--shadow-color, #282828),
+      0.4372230674px 2.1px var(--shadow-color, #282828),
+      0.4996835056px 2.4px var(--shadow-color, #282828),
+      0.5621439438px 2.7px var(--shadow-color, #282828),
+      0.624604382px 3px var(--shadow-color, #282828),
+      0.6870648201px 3.3px var(--shadow-color, #282828),
+      0.7495252583px 3.6px var(--shadow-color, #282828),
+      0.8119856965px 3.9px var(--shadow-color, #282828),
+      0.8744461347px 4.2px var(--shadow-color, #282828),
+      0.9369065729px 4.5px var(--shadow-color, #282828);
+  }
+  60% {
+    text-shadow: 0.1030056648px 0.3px var(--shadow-color, #282828),
+      0.2060113296px 0.6px var(--shadow-color, #282828),
+      0.3090169944px 0.9px var(--shadow-color, #282828),
+      0.4120226592px 1.2px var(--shadow-color, #282828),
+      0.515028324px 1.5px var(--shadow-color, #282828),
+      0.6180339887px 1.8px var(--shadow-color, #282828),
+      0.7210396535px 2.1px var(--shadow-color, #282828),
+      0.8240453183px 2.4px var(--shadow-color, #282828),
+      0.9270509831px 2.7px var(--shadow-color, #282828),
+      1.0300566479px 3px var(--shadow-color, #282828),
+      1.1330623127px 3.3px var(--shadow-color, #282828),
+      1.2360679775px 3.6px var(--shadow-color, #282828),
+      1.3390736423px 3.9px var(--shadow-color, #282828),
+      1.4420793071px 4.2px var(--shadow-color, #282828),
+      1.5450849719px 4.5px var(--shadow-color, #282828);
+  }
+  64% {
+    text-shadow: 0.1419264305px 0.3px var(--shadow-color, #282828),
+      0.283852861px 0.6px var(--shadow-color, #282828),
+      0.4257792916px 0.9px var(--shadow-color, #282828),
+      0.5677057221px 1.2px var(--shadow-color, #282828),
+      0.7096321526px 1.5px var(--shadow-color, #282828),
+      0.8515585831px 1.8px var(--shadow-color, #282828),
+      0.9934850137px 2.1px var(--shadow-color, #282828),
+      1.1354114442px 2.4px var(--shadow-color, #282828),
+      1.2773378747px 2.7px var(--shadow-color, #282828),
+      1.4192643052px 3px var(--shadow-color, #282828),
+      1.5611907357px 3.3px var(--shadow-color, #282828),
+      1.7031171663px 3.6px var(--shadow-color, #282828),
+      1.8450435968px 3.9px var(--shadow-color, #282828),
+      1.9869700273px 4.2px var(--shadow-color, #282828),
+      2.1288964578px 4.5px var(--shadow-color, #282828);
+  }
+  68% {
+    text-shadow: 0.1786089317px 0.3px var(--shadow-color, #282828),
+      0.3572178633px 0.6px var(--shadow-color, #282828),
+      0.535826795px 0.9px var(--shadow-color, #282828),
+      0.7144357266px 1.2px var(--shadow-color, #282828),
+      0.8930446583px 1.5px var(--shadow-color, #282828),
+      1.07165359px 1.8px var(--shadow-color, #282828),
+      1.2502625216px 2.1px var(--shadow-color, #282828),
+      1.4288714533px 2.4px var(--shadow-color, #282828),
+      1.6074803849px 2.7px var(--shadow-color, #282828),
+      1.7860893166px 3px var(--shadow-color, #282828),
+      1.9646982483px 3.3px var(--shadow-color, #282828),
+      2.1433071799px 3.6px var(--shadow-color, #282828),
+      2.3219161116px 3.9px var(--shadow-color, #282828),
+      2.5005250432px 4.2px var(--shadow-color, #282828),
+      2.6791339749px 4.5px var(--shadow-color, #282828);
+  }
+  72% {
+    text-shadow: 0.2124746632px 0.3px var(--shadow-color, #282828),
+      0.4249493265px 0.6px var(--shadow-color, #282828),
+      0.6374239897px 0.9px var(--shadow-color, #282828),
+      0.849898653px 1.2px var(--shadow-color, #282828),
+      1.0623733162px 1.5px var(--shadow-color, #282828),
+      1.2748479795px 1.8px var(--shadow-color, #282828),
+      1.4873226427px 2.1px var(--shadow-color, #282828),
+      1.699797306px 2.4px var(--shadow-color, #282828),
+      1.9122719692px 2.7px var(--shadow-color, #282828),
+      2.1247466325px 3px var(--shadow-color, #282828),
+      2.3372212957px 3.3px var(--shadow-color, #282828),
+      2.549695959px 3.6px var(--shadow-color, #282828),
+      2.7621706222px 3.9px var(--shadow-color, #282828),
+      2.9746452855px 4.2px var(--shadow-color, #282828),
+      3.1871199487px 4.5px var(--shadow-color, #282828);
+  }
+  76% {
+    text-shadow: 0.2429895425px 0.3px var(--shadow-color, #282828),
+      0.4859790849px 0.6px var(--shadow-color, #282828),
+      0.7289686274px 0.9px var(--shadow-color, #282828),
+      0.9719581699px 1.2px var(--shadow-color, #282828),
+      1.2149477124px 1.5px var(--shadow-color, #282828),
+      1.4579372548px 1.8px var(--shadow-color, #282828),
+      1.7009267973px 2.1px var(--shadow-color, #282828),
+      1.9439163398px 2.4px var(--shadow-color, #282828),
+      2.1869058823px 2.7px var(--shadow-color, #282828),
+      2.4298954247px 3px var(--shadow-color, #282828),
+      2.6728849672px 3.3px var(--shadow-color, #282828),
+      2.9158745097px 3.6px var(--shadow-color, #282828),
+      3.1588640522px 3.9px var(--shadow-color, #282828),
+      3.4018535946px 4.2px var(--shadow-color, #282828),
+      3.6448431371px 4.5px var(--shadow-color, #282828);
+  }
+  80% {
+    text-shadow: 0.2696723315px 0.3px var(--shadow-color, #282828),
+      0.5393446629px 0.6px var(--shadow-color, #282828),
+      0.8090169944px 0.9px var(--shadow-color, #282828),
+      1.0786893258px 1.2px var(--shadow-color, #282828),
+      1.3483616573px 1.5px var(--shadow-color, #282828),
+      1.6180339887px 1.8px var(--shadow-color, #282828),
+      1.8877063202px 2.1px var(--shadow-color, #282828),
+      2.1573786517px 2.4px var(--shadow-color, #282828),
+      2.4270509831px 2.7px var(--shadow-color, #282828),
+      2.6967233146px 3px var(--shadow-color, #282828),
+      2.966395646px 3.3px var(--shadow-color, #282828),
+      3.2360679775px 3.6px var(--shadow-color, #282828),
+      3.505740309px 3.9px var(--shadow-color, #282828),
+      3.7754126404px 4.2px var(--shadow-color, #282828),
+      4.0450849719px 4.5px var(--shadow-color, #282828);
+  }
+  84% {
+    text-shadow: 0.2921022267px 0.3px var(--shadow-color, #282828),
+      0.5842044534px 0.6px var(--shadow-color, #282828),
+      0.87630668px 0.9px var(--shadow-color, #282828),
+      1.1684089067px 1.2px var(--shadow-color, #282828),
+      1.4605111334px 1.5px var(--shadow-color, #282828),
+      1.7526133601px 1.8px var(--shadow-color, #282828),
+      2.0447155868px 2.1px var(--shadow-color, #282828),
+      2.3368178135px 2.4px var(--shadow-color, #282828),
+      2.6289200401px 2.7px var(--shadow-color, #282828),
+      2.9210222668px 3px var(--shadow-color, #282828),
+      3.2131244935px 3.3px var(--shadow-color, #282828),
+      3.5052267202px 3.6px var(--shadow-color, #282828),
+      3.7973289469px 3.9px var(--shadow-color, #282828),
+      4.0894311735px 4.2px var(--shadow-color, #282828);
+  }
+  88% {
+    text-shadow: 0.3099254953px 0.3px var(--shadow-color, #282828),
+      0.6198509906px 0.6px var(--shadow-color, #282828),
+      0.9297764859px 0.9px var(--shadow-color, #282828),
+      1.2397019812px 1.2px var(--shadow-color, #282828),
+      1.5496274765px 1.5px var(--shadow-color, #282828),
+      1.8595529718px 1.8px var(--shadow-color, #282828),
+      2.1694784671px 2.1px var(--shadow-color, #282828),
+      2.4794039624px 2.4px var(--shadow-color, #282828),
+      2.7893294577px 2.7px var(--shadow-color, #282828),
+      3.099254953px 3px var(--shadow-color, #282828),
+      3.4091804483px 3.3px var(--shadow-color, #282828),
+      3.7191059436px 3.6px var(--shadow-color, #282828),
+      4.0290314388px 3.9px var(--shadow-color, #282828),
+      4.3389569341px 4.2px var(--shadow-color, #282828);
+  }
+  92% {
+    text-shadow: 0.3228610537px 0.3px var(--shadow-color, #282828),
+      0.6457221074px 0.6px var(--shadow-color, #282828),
+      0.9685831611px 0.9px var(--shadow-color, #282828),
+      1.2914442148px 1.2px var(--shadow-color, #282828),
+      1.6143052685px 1.5px var(--shadow-color, #282828),
+      1.9371663223px 1.8px var(--shadow-color, #282828),
+      2.260027376px 2.1px var(--shadow-color, #282828),
+      2.5828884297px 2.4px var(--shadow-color, #282828),
+      2.9057494834px 2.7px var(--shadow-color, #282828),
+      3.2286105371px 3px var(--shadow-color, #282828),
+      3.5514715908px 3.3px var(--shadow-color, #282828),
+      3.8743326445px 3.6px var(--shadow-color, #282828),
+      4.1971936982px 3.9px var(--shadow-color, #282828),
+      4.5200547519px 4.2px var(--shadow-color, #282828),
+      4.8429158056px 4.5px var(--shadow-color, #282828);
+  }
+  96% {
+    text-shadow: 0.3307049004px 0.3px var(--shadow-color, #282828),
+      0.6614098009px 0.6px var(--shadow-color, #282828),
+      0.9921147013px 0.9px var(--shadow-color, #282828),
+      1.3228196018px 1.2px var(--shadow-color, #282828),
+      1.6535245022px 1.5px var(--shadow-color, #282828),
+      1.9842294026px 1.8px var(--shadow-color, #282828),
+      2.3149343031px 2.1px var(--shadow-color, #282828),
+      2.6456392035px 2.4px var(--shadow-color, #282828),
+      2.9763441039px 2.7px var(--shadow-color, #282828),
+      3.3070490044px 3px var(--shadow-color, #282828),
+      3.6377539048px 3.3px var(--shadow-color, #282828),
+      3.9684588053px 3.6px var(--shadow-color, #282828),
+      4.2991637057px 3.9px var(--shadow-color, #282828),
+      4.6298686061px 4.2px var(--shadow-color, #282828);
+  }
+  100% {
+    text-shadow: 0.3333333333px 0.3px var(--shadow-color, #282828),
+      0.6666666667px 0.6px var(--shadow-color, #282828),
+      1px 0.9px var(--shadow-color, #282828),
+      1.3333333333px 1.2px var(--shadow-color, #282828),
+      1.6666666667px 1.5px var(--shadow-color, #282828),
+      2px 1.8px var(--shadow-color, #282828),
+      2.3333333333px 2.1px var(--shadow-color, #282828),
+      2.6666666667px 2.4px var(--shadow-color, #282828),
+      3px 2.7px var(--shadow-color, #282828),
+      3.3333333333px 3px var(--shadow-color, #282828),
+      3.6666666667px 3.3px var(--shadow-color, #282828),
+      4px 3.6px var(--shadow-color, #282828),
+      4.3333333333px 3.9px var(--shadow-color, #282828),
+      4.6666666667px 4.2px var(--shadow-color, #282828),
+      5px 4.5px var(--shadow-color, #282828);
+  }
+}
+@keyframes stagger {
+  0% {
+    text-shadow: -0.3333333333px 0.3px var(--shadow-color, #282828),
+      -0.6666666667px 0.6px var(--shadow-color, #282828),
+      -1px 0.9px var(--shadow-color, #282828),
+      -1.3333333333px 1.2px var(--shadow-color, #282828),
+      -1.6666666667px 1.5px var(--shadow-color, #282828),
+      -2px 1.8px var(--shadow-color, #282828),
+      -2.3333333333px 2.1px var(--shadow-color, #282828),
+      -2.6666666667px 2.4px var(--shadow-color, #282828),
+      -3px 2.7px var(--shadow-color, #282828),
+      -3.3333333333px 3px var(--shadow-color, #282828),
+      -3.6666666667px 3.3px var(--shadow-color, #282828),
+      -4px 3.6px var(--shadow-color, #282828),
+      -4.3333333333px 3.9px var(--shadow-color, #282828),
+      -4.6666666667px 4.2px var(--shadow-color, #282828),
+      -5px 4.5px var(--shadow-color, #282828),
+      -5.3333333333px 4.8px var(--shadow-color, #282828);
+  }
+  4% {
+    text-shadow: -0.3307049004px 0.3px var(--shadow-color, #282828),
+      -0.6614098009px 0.6px var(--shadow-color, #282828),
+      -0.9921147013px 0.9px var(--shadow-color, #282828),
+      -1.3228196018px 1.2px var(--shadow-color, #282828),
+      -1.6535245022px 1.5px var(--shadow-color, #282828),
+      -1.9842294026px 1.8px var(--shadow-color, #282828),
+      -2.3149343031px 2.1px var(--shadow-color, #282828),
+      -2.6456392035px 2.4px var(--shadow-color, #282828),
+      -2.9763441039px 2.7px var(--shadow-color, #282828),
+      -3.3070490044px 3px var(--shadow-color, #282828),
+      -3.6377539048px 3.3px var(--shadow-color, #282828),
+      -3.9684588053px 3.6px var(--shadow-color, #282828),
+      -4.2991637057px 3.9px var(--shadow-color, #282828),
+      -4.6298686061px 4.2px var(--shadow-color, #282828),
+      -4.9605735066px 4.5px var(--shadow-color, #282828);
+  }
+  8% {
+    text-shadow: -0.3228610537px 0.3px var(--shadow-color, #282828),
+      -0.6457221074px 0.6px var(--shadow-color, #282828),
+      -0.9685831611px 0.9px var(--shadow-color, #282828),
+      -1.2914442148px 1.2px var(--shadow-color, #282828),
+      -1.6143052685px 1.5px var(--shadow-color, #282828),
+      -1.9371663223px 1.8px var(--shadow-color, #282828),
+      -2.260027376px 2.1px var(--shadow-color, #282828),
+      -2.5828884297px 2.4px var(--shadow-color, #282828),
+      -2.9057494834px 2.7px var(--shadow-color, #282828),
+      -3.2286105371px 3px var(--shadow-color, #282828),
+      -3.5514715908px 3.3px var(--shadow-color, #282828),
+      -3.8743326445px 3.6px var(--shadow-color, #282828),
+      -4.1971936982px 3.9px var(--shadow-color, #282828),
+      -4.5200547519px 4.2px var(--shadow-color, #282828),
+      -4.8429158056px 4.5px var(--shadow-color, #282828);
+  }
+  12% {
+    text-shadow: -0.3099254953px 0.3px var(--shadow-color, #282828),
+      -0.6198509906px 0.6px var(--shadow-color, #282828),
+      -0.9297764859px 0.9px var(--shadow-color, #282828),
+      -1.2397019812px 1.2px var(--shadow-color, #282828),
+      -1.5496274765px 1.5px var(--shadow-color, #282828),
+      -1.8595529718px 1.8px var(--shadow-color, #282828),
+      -2.1694784671px 2.1px var(--shadow-color, #282828),
+      -2.4794039624px 2.4px var(--shadow-color, #282828),
+      -2.7893294577px 2.7px var(--shadow-color, #282828),
+      -3.099254953px 3px var(--shadow-color, #282828),
+      -3.4091804483px 3.3px var(--shadow-color, #282828),
+      -3.7191059436px 3.6px var(--shadow-color, #282828),
+      -4.0290314388px 3.9px var(--shadow-color, #282828),
+      -4.3389569341px 4.2px var(--shadow-color, #282828),
+      -4.6488824294px 4.5px var(--shadow-color, #282828),
+      -4.9588079247px 4.8px var(--shadow-color, #282828);
+  }
+  16% {
+    text-shadow: -0.2921022267px 0.3px var(--shadow-color, #282828),
+      -0.5842044534px 0.6px var(--shadow-color, #282828),
+      -0.87630668px 0.9px var(--shadow-color, #282828),
+      -1.1684089067px 1.2px var(--shadow-color, #282828),
+      -1.4605111334px 1.5px var(--shadow-color, #282828),
+      -1.7526133601px 1.8px var(--shadow-color, #282828),
+      -2.0447155868px 2.1px var(--shadow-color, #282828),
+      -2.3368178135px 2.4px var(--shadow-color, #282828),
+      -2.6289200401px 2.7px var(--shadow-color, #282828),
+      -2.9210222668px 3px var(--shadow-color, #282828),
+      -3.2131244935px 3.3px var(--shadow-color, #282828),
+      -3.5052267202px 3.6px var(--shadow-color, #282828),
+      -3.7973289469px 3.9px var(--shadow-color, #282828),
+      -4.0894311735px 4.2px var(--shadow-color, #282828),
+      -4.3815334002px 4.5px var(--shadow-color, #282828);
+  }
+  20% {
+    text-shadow: -0.2696723315px 0.3px var(--shadow-color, #282828),
+      -0.5393446629px 0.6px var(--shadow-color, #282828),
+      -0.8090169944px 0.9px var(--shadow-color, #282828),
+      -1.0786893258px 1.2px var(--shadow-color, #282828),
+      -1.3483616573px 1.5px var(--shadow-color, #282828),
+      -1.6180339887px 1.8px var(--shadow-color, #282828),
+      -1.8877063202px 2.1px var(--shadow-color, #282828),
+      -2.1573786517px 2.4px var(--shadow-color, #282828),
+      -2.4270509831px 2.7px var(--shadow-color, #282828),
+      -2.6967233146px 3px var(--shadow-color, #282828),
+      -2.966395646px 3.3px var(--shadow-color, #282828),
+      -3.2360679775px 3.6px var(--shadow-color, #282828),
+      -3.505740309px 3.9px var(--shadow-color, #282828),
+      -3.7754126404px 4.2px var(--shadow-color, #282828),
+      -4.0450849719px 4.5px var(--shadow-color, #282828);
+  }
+  24% {
+    text-shadow: -0.2429895425px 0.3px var(--shadow-color, #282828),
+      -0.4859790849px 0.6px var(--shadow-color, #282828),
+      -0.7289686274px 0.9px var(--shadow-color, #282828),
+      -0.9719581699px 1.2px var(--shadow-color, #282828),
+      -1.2149477124px 1.5px var(--shadow-color, #282828),
+      -1.4579372548px 1.8px var(--shadow-color, #282828),
+      -1.7009267973px 2.1px var(--shadow-color, #282828),
+      -1.9439163398px 2.4px var(--shadow-color, #282828),
+      -2.1869058823px 2.7px var(--shadow-color, #282828),
+      -2.4298954247px 3px var(--shadow-color, #282828),
+      -2.6728849672px 3.3px var(--shadow-color, #282828),
+      -2.9158745097px 3.6px var(--shadow-color, #282828),
+      -3.1588640522px 3.9px var(--shadow-color, #282828),
+      -3.4018535946px 4.2px var(--shadow-color, #282828),
+      -3.6448431371px 4.5px var(--shadow-color, #282828);
+  }
+  28% {
+    text-shadow: -0.2124746632px 0.3px var(--shadow-color, #282828),
+      -0.4249493265px 0.6px var(--shadow-color, #282828),
+      -0.6374239897px 0.9px var(--shadow-color, #282828),
+      -0.849898653px 1.2px var(--shadow-color, #282828),
+      -1.0623733162px 1.5px var(--shadow-color, #282828),
+      -1.2748479795px 1.8px var(--shadow-color, #282828),
+      -1.4873226427px 2.1px var(--shadow-color, #282828),
+      -1.699797306px 2.4px var(--shadow-color, #282828),
+      -1.9122719692px 2.7px var(--shadow-color, #282828),
+      -2.1247466325px 3px var(--shadow-color, #282828),
+      -2.3372212957px 3.3px var(--shadow-color, #282828),
+      -2.549695959px 3.6px var(--shadow-color, #282828),
+      -2.7621706222px 3.9px var(--shadow-color, #282828),
+      -2.9746452855px 4.2px var(--shadow-color, #282828),
+      -3.1871199487px 4.5px var(--shadow-color, #282828);
+  }
+  32% {
+    text-shadow: -0.1786089317px 0.3px var(--shadow-color, #282828),
+      -0.3572178633px 0.6px var(--shadow-color, #282828),
+      -0.535826795px 0.9px var(--shadow-color, #282828),
+      -0.7144357266px 1.2px var(--shadow-color, #282828),
+      -0.8930446583px 1.5px var(--shadow-color, #282828),
+      -1.07165359px 1.8px var(--shadow-color, #282828),
+      -1.2502625216px 2.1px var(--shadow-color, #282828),
+      -1.4288714533px 2.4px var(--shadow-color, #282828),
+      -1.6074803849px 2.7px var(--shadow-color, #282828),
+      -1.7860893166px 3px var(--shadow-color, #282828),
+      -1.9646982483px 3.3px var(--shadow-color, #282828),
+      -2.1433071799px 3.6px var(--shadow-color, #282828),
+      -2.3219161116px 3.9px var(--shadow-color, #282828),
+      -2.5005250432px 4.2px var(--shadow-color, #282828);
+  }
+  36% {
+    text-shadow: -0.1419264305px 0.3px var(--shadow-color, #282828),
+      -0.283852861px 0.6px var(--shadow-color, #282828),
+      -0.4257792916px 0.9px var(--shadow-color, #282828),
+      -0.5677057221px 1.2px var(--shadow-color, #282828),
+      -0.7096321526px 1.5px var(--shadow-color, #282828),
+      -0.8515585831px 1.8px var(--shadow-color, #282828),
+      -0.9934850137px 2.1px var(--shadow-color, #282828),
+      -1.1354114442px 2.4px var(--shadow-color, #282828),
+      -1.2773378747px 2.7px var(--shadow-color, #282828),
+      -1.4192643052px 3px var(--shadow-color, #282828),
+      -1.5611907357px 3.3px var(--shadow-color, #282828),
+      -1.7031171663px 3.6px var(--shadow-color, #282828),
+      -1.8450435968px 3.9px var(--shadow-color, #282828),
+      -1.9869700273px 4.2px var(--shadow-color, #282828),
+      -2.1288964578px 4.5px var(--shadow-color, #282828);
+  }
+  40% {
+    text-shadow: -0.1030056648px 0.3px var(--shadow-color, #282828),
+      -0.2060113296px 0.6px var(--shadow-color, #282828),
+      -0.3090169944px 0.9px var(--shadow-color, #282828),
+      -0.4120226592px 1.2px var(--shadow-color, #282828),
+      -0.515028324px 1.5px var(--shadow-color, #282828),
+      -0.6180339887px 1.8px var(--shadow-color, #282828),
+      -0.7210396535px 2.1px var(--shadow-color, #282828),
+      -0.8240453183px 2.4px var(--shadow-color, #282828),
+      -0.9270509831px 2.7px var(--shadow-color, #282828),
+      -1.0300566479px 3px var(--shadow-color, #282828),
+      -1.1330623127px 3.3px var(--shadow-color, #282828),
+      -1.2360679775px 3.6px var(--shadow-color, #282828),
+      -1.3390736423px 3.9px var(--shadow-color, #282828),
+      -1.4420793071px 4.2px var(--shadow-color, #282828);
+  }
+  44% {
+    text-shadow: -0.0624604382px 0.3px var(--shadow-color, #282828),
+      -0.1249208764px 0.6px var(--shadow-color, #282828),
+      -0.1873813146px 0.9px var(--shadow-color, #282828),
+      -0.2498417528px 1.2px var(--shadow-color, #282828),
+      -0.312302191px 1.5px var(--shadow-color, #282828),
+      -0.3747626292px 1.8px var(--shadow-color, #282828),
+      -0.4372230674px 2.1px var(--shadow-color, #282828),
+      -0.4996835056px 2.4px var(--shadow-color, #282828),
+      -0.5621439438px 2.7px var(--shadow-color, #282828),
+      -0.624604382px 3px var(--shadow-color, #282828),
+      -0.6870648201px 3.3px var(--shadow-color, #282828),
+      -0.7495252583px 3.6px var(--shadow-color, #282828),
+      -0.8119856965px 3.9px var(--shadow-color, #282828),
+      -0.8744461347px 4.2px var(--shadow-color, #282828),
+      -0.9369065729px 4.5px var(--shadow-color, #282828);
+  }
+  48% {
+    text-shadow: -0.0209301732px 0.3px var(--shadow-color, #282828),
+      -0.0418603464px 0.6px var(--shadow-color, #282828),
+      -0.0627905195px 0.9px var(--shadow-color, #282828),
+      -0.0837206927px 1.2px var(--shadow-color, #282828),
+      -0.1046508659px 1.5px var(--shadow-color, #282828),
+      -0.1255810391px 1.8px var(--shadow-color, #282828),
+      -0.1465112122px 2.1px var(--shadow-color, #282828),
+      -0.1674413854px 2.4px var(--shadow-color, #282828),
+      -0.1883715586px 2.7px var(--shadow-color, #282828),
+      -0.2093017318px 3px var(--shadow-color, #282828),
+      -0.2302319049px 3.3px var(--shadow-color, #282828),
+      -0.2511620781px 3.6px var(--shadow-color, #282828),
+      -0.2720922513px 3.9px var(--shadow-color, #282828),
+      -0.2930224245px 4.2px var(--shadow-color, #282828),
+      -0.3139525976px 4.5px var(--shadow-color, #282828);
+  }
+  52% {
+    text-shadow: 0.0209301732px 0.3px var(--shadow-color, #282828),
+      0.0418603464px 0.6px var(--shadow-color, #282828),
+      0.0627905195px 0.9px var(--shadow-color, #282828),
+      0.0837206927px 1.2px var(--shadow-color, #282828),
+      0.1046508659px 1.5px var(--shadow-color, #282828),
+      0.1255810391px 1.8px var(--shadow-color, #282828),
+      0.1465112122px 2.1px var(--shadow-color, #282828),
+      0.1674413854px 2.4px var(--shadow-color, #282828),
+      0.1883715586px 2.7px var(--shadow-color, #282828),
+      0.2093017318px 3px var(--shadow-color, #282828),
+      0.2302319049px 3.3px var(--shadow-color, #282828),
+      0.2511620781px 3.6px var(--shadow-color, #282828),
+      0.2720922513px 3.9px var(--shadow-color, #282828),
+      0.2930224245px 4.2px var(--shadow-color, #282828);
+  }
+  56% {
+    text-shadow: 0.0624604382px 0.3px var(--shadow-color, #282828),
+      0.1249208764px 0.6px var(--shadow-color, #282828),
+      0.1873813146px 0.9px var(--shadow-color, #282828),
+      0.2498417528px 1.2px var(--shadow-color, #282828),
+      0.312302191px 1.5px var(--shadow-color, #282828),
+      0.3747626292px 1.8px var(--shadow-color, #282828),
+      0.4372230674px 2.1px var(--shadow-color, #282828),
+      0.4996835056px 2.4px var(--shadow-color, #282828),
+      0.5621439438px 2.7px var(--shadow-color, #282828),
+      0.624604382px 3px var(--shadow-color, #282828),
+      0.6870648201px 3.3px var(--shadow-color, #282828),
+      0.7495252583px 3.6px var(--shadow-color, #282828),
+      0.8119856965px 3.9px var(--shadow-color, #282828),
+      0.8744461347px 4.2px var(--shadow-color, #282828);
+  }
+  60% {
+    text-shadow: 0.1030056648px 0.3px var(--shadow-color, #282828),
+      0.2060113296px 0.6px var(--shadow-color, #282828),
+      0.3090169944px 0.9px var(--shadow-color, #282828),
+      0.4120226592px 1.2px var(--shadow-color, #282828),
+      0.515028324px 1.5px var(--shadow-color, #282828),
+      0.6180339887px 1.8px var(--shadow-color, #282828),
+      0.7210396535px 2.1px var(--shadow-color, #282828),
+      0.8240453183px 2.4px var(--shadow-color, #282828),
+      0.9270509831px 2.7px var(--shadow-color, #282828),
+      1.0300566479px 3px var(--shadow-color, #282828),
+      1.1330623127px 3.3px var(--shadow-color, #282828),
+      1.2360679775px 3.6px var(--shadow-color, #282828),
+      1.3390736423px 3.9px var(--shadow-color, #282828),
+      1.4420793071px 4.2px var(--shadow-color, #282828);
+  }
+  64% {
+    text-shadow: 0.1419264305px 0.3px var(--shadow-color, #282828),
+      0.283852861px 0.6px var(--shadow-color, #282828),
+      0.4257792916px 0.9px var(--shadow-color, #282828),
+      0.5677057221px 1.2px var(--shadow-color, #282828),
+      0.7096321526px 1.5px var(--shadow-color, #282828),
+      0.8515585831px 1.8px var(--shadow-color, #282828),
+      0.9934850137px 2.1px var(--shadow-color, #282828),
+      1.1354114442px 2.4px var(--shadow-color, #282828),
+      1.2773378747px 2.7px var(--shadow-color, #282828),
+      1.4192643052px 3px var(--shadow-color, #282828),
+      1.5611907357px 3.3px var(--shadow-color, #282828),
+      1.7031171663px 3.6px var(--shadow-color, #282828),
+      1.8450435968px 3.9px var(--shadow-color, #282828),
+      1.9869700273px 4.2px var(--shadow-color, #282828);
+  }
+  68% {
+    text-shadow: 0.1786089317px 0.3px var(--shadow-color, #282828),
+      0.3572178633px 0.6px var(--shadow-color, #282828),
+      0.535826795px 0.9px var(--shadow-color, #282828),
+      0.7144357266px 1.2px var(--shadow-color, #282828),
+      0.8930446583px 1.5px var(--shadow-color, #282828),
+      1.07165359px 1.8px var(--shadow-color, #282828),
+      1.2502625216px 2.1px var(--shadow-color, #282828),
+      1.4288714533px 2.4px var(--shadow-color, #282828),
+      1.6074803849px 2.7px var(--shadow-color, #282828),
+      1.7860893166px 3px var(--shadow-color, #282828),
+      1.9646982483px 3.3px var(--shadow-color, #282828),
+      2.1433071799px 3.6px var(--shadow-color, #282828),
+      2.3219161116px 3.9px var(--shadow-color, #282828),
+      2.5005250432px 4.2px var(--shadow-color, #282828);
+  }
+  72% {
+    text-shadow: 0.2124746632px 0.3px var(--shadow-color, #282828),
+      0.4249493265px 0.6px var(--shadow-color, #282828),
+      0.6374239897px 0.9px var(--shadow-color, #282828),
+      0.849898653px 1.2px var(--shadow-color, #282828),
+      1.0623733162px 1.5px var(--shadow-color, #282828),
+      1.2748479795px 1.8px var(--shadow-color, #282828),
+      1.4873226427px 2.1px var(--shadow-color, #282828),
+      1.699797306px 2.4px var(--shadow-color, #282828),
+      1.9122719692px 2.7px var(--shadow-color, #282828),
+      2.1247466325px 3px var(--shadow-color, #282828),
+      2.3372212957px 3.3px var(--shadow-color, #282828),
+      2.549695959px 3.6px var(--shadow-color, #282828),
+      2.7621706222px 3.9px var(--shadow-color, #282828),
+      2.9746452855px 4.2px var(--shadow-color, #282828);
+  }
+  76% {
+    text-shadow: 0.2429895425px 0.3px var(--shadow-color, #282828),
+      0.4859790849px 0.6px var(--shadow-color, #282828),
+      0.7289686274px 0.9px var(--shadow-color, #282828),
+      0.9719581699px 1.2px var(--shadow-color, #282828),
+      1.2149477124px 1.5px var(--shadow-color, #282828),
+      1.4579372548px 1.8px var(--shadow-color, #282828),
+      1.7009267973px 2.1px var(--shadow-color, #282828),
+      1.9439163398px 2.4px var(--shadow-color, #282828),
+      2.1869058823px 2.7px var(--shadow-color, #282828),
+      2.4298954247px 3px var(--shadow-color, #282828),
+      2.6728849672px 3.3px var(--shadow-color, #282828),
+      2.9158745097px 3.6px var(--shadow-color, #282828),
+      3.1588640522px 3.9px var(--shadow-color, #282828),
+      3.4018535946px 4.2px var(--shadow-color, #282828);
+  }
+  80% {
+    text-shadow: 0.2696723315px 0.3px var(--shadow-color, #282828),
+      0.5393446629px 0.6px var(--shadow-color, #282828),
+      0.8090169944px 0.9px var(--shadow-color, #282828),
+      1.0786893258px 1.2px var(--shadow-color, #282828),
+      1.3483616573px 1.5px var(--shadow-color, #282828),
+      1.6180339887px 1.8px var(--shadow-color, #282828),
+      1.8877063202px 2.1px var(--shadow-color, #282828),
+      2.1573786517px 2.4px var(--shadow-color, #282828),
+      2.4270509831px 2.7px var(--shadow-color, #282828),
+      2.6967233146px 3px var(--shadow-color, #282828),
+      2.966395646px 3.3px var(--shadow-color, #282828),
+      3.2360679775px 3.6px var(--shadow-color, #282828),
+      3.505740309px 3.9px var(--shadow-color, #282828),
+      3.7754126404px 4.2px var(--shadow-color, #282828);
+  }
+  84% {
+    text-shadow: 0.2921022267px 0.3px var(--shadow-color, #282828),
+      0.5842044534px 0.6px var(--shadow-color, #282828),
+      0.87630668px 0.9px var(--shadow-color, #282828),
+      1.1684089067px 1.2px var(--shadow-color, #282828),
+      1.4605111334px 1.5px var(--shadow-color, #282828),
+      1.7526133601px 1.8px var(--shadow-color, #282828),
+      2.0447155868px 2.1px var(--shadow-color, #282828),
+      2.3368178135px 2.4px var(--shadow-color, #282828),
+      2.6289200401px 2.7px var(--shadow-color, #282828),
+      2.9210222668px 3px var(--shadow-color, #282828),
+      3.2131244935px 3.3px var(--shadow-color, #282828),
+      3.5052267202px 3.6px var(--shadow-color, #282828),
+      3.7973289469px 3.9px var(--shadow-color, #282828),
+      4.0894311735px 4.2px var(--shadow-color, #282828),
+      4.3815334002px 4.5px var(--shadow-color, #282828);
+  }
+  88% {
+    text-shadow: 0.3099254953px 0.3px var(--shadow-color, #282828),
+      0.6198509906px 0.6px var(--shadow-color, #282828),
+      0.9297764859px 0.9px var(--shadow-color, #282828),
+      1.2397019812px 1.2px var(--shadow-color, #282828),
+      1.5496274765px 1.5px var(--shadow-color, #282828),
+      1.8595529718px 1.8px var(--shadow-color, #282828),
+      2.1694784671px 2.1px var(--shadow-color, #282828),
+      2.4794039624px 2.4px var(--shadow-color, #282828),
+      2.7893294577px 2.7px var(--shadow-color, #282828),
+      3.099254953px 3px var(--shadow-color, #282828),
+      3.4091804483px 3.3px var(--shadow-color, #282828),
+      3.7191059436px 3.6px var(--shadow-color, #282828),
+      4.0290314388px 3.9px var(--shadow-color, #282828),
+      4.3389569341px 4.2px var(--shadow-color, #282828);
+  }
+  92% {
+    text-shadow: 0.3228610537px 0.3px var(--shadow-color, #282828),
+      0.6457221074px 0.6px var(--shadow-color, #282828),
+      0.9685831611px 0.9px var(--shadow-color, #282828),
+      1.2914442148px 1.2px var(--shadow-color, #282828),
+      1.6143052685px 1.5px var(--shadow-color, #282828),
+      1.9371663223px 1.8px var(--shadow-color, #282828),
+      2.260027376px 2.1px var(--shadow-color, #282828),
+      2.5828884297px 2.4px var(--shadow-color, #282828),
+      2.9057494834px 2.7px var(--shadow-color, #282828),
+      3.2286105371px 3px var(--shadow-color, #282828),
+      3.5514715908px 3.3px var(--shadow-color, #282828),
+      3.8743326445px 3.6px var(--shadow-color, #282828),
+      4.1971936982px 3.9px var(--shadow-color, #282828),
+      4.5200547519px 4.2px var(--shadow-color, #282828),
+      4.8429158056px 4.5px var(--shadow-color, #282828);
+  }
+  96% {
+    text-shadow: 0.3307049004px 0.3px var(--shadow-color, #282828),
+      0.6614098009px 0.6px var(--shadow-color, #282828),
+      0.9921147013px 0.9px var(--shadow-color, #282828),
+      1.3228196018px 1.2px var(--shadow-color, #282828),
+      1.6535245022px 1.5px var(--shadow-color, #282828),
+      1.9842294026px 1.8px var(--shadow-color, #282828),
+      2.3149343031px 2.1px var(--shadow-color, #282828),
+      2.6456392035px 2.4px var(--shadow-color, #282828),
+      2.9763441039px 2.7px var(--shadow-color, #282828),
+      3.3070490044px 3px var(--shadow-color, #282828),
+      3.6377539048px 3.3px var(--shadow-color, #282828),
+      3.9684588053px 3.6px var(--shadow-color, #282828),
+      4.2991637057px 3.9px var(--shadow-color, #282828),
+      4.6298686061px 4.2px var(--shadow-color, #282828),
+      4.9605735066px 4.5px var(--shadow-color, #282828);
+  }
+  100% {
+    text-shadow: 0.3333333333px 0.3px var(--shadow-color, #282828),
+      0.6666666667px 0.6px var(--shadow-color, #282828),
+      1px 0.9px var(--shadow-color, #282828),
+      1.3333333333px 1.2px var(--shadow-color, #282828),
+      1.6666666667px 1.5px var(--shadow-color, #282828),
+      2px 1.8px var(--shadow-color, #282828),
+      2.3333333333px 2.1px var(--shadow-color, #282828),
+      2.6666666667px 2.4px var(--shadow-color, #282828),
+      3px 2.7px var(--shadow-color, #282828),
+      3.3333333333px 3px var(--shadow-color, #282828),
+      3.6666666667px 3.3px var(--shadow-color, #282828),
+      4px 3.6px var(--shadow-color, #282828),
+      4.3333333333px 3.9px var(--shadow-color, #282828),
+      4.6666666667px 4.2px var(--shadow-color, #282828),
+      5px 4.5px var(--shadow-color, #282828),
+      5.3333333333px 4.8px var(--shadow-color, #282828);
+  }
+}
+
+.circular {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%) scale(var(--scale, 1));
+}
+.circular > * {
+  position: absolute;
+  top: -100%;
+  left: 33%;
+}
+.circular > *[data-idx="0"] {
+  height: 150px;
+  transform: rotate(0deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="1"] {
+  height: 150px;
+  transform: rotate(15deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="2"] {
+  height: 150px;
+  transform: rotate(30deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="3"] {
+  height: 150px;
+  transform: rotate(45deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="4"] {
+  height: 150px;
+  transform: rotate(60deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="5"] {
+  height: 150px;
+  transform: rotate(75deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="6"] {
+  height: 150px;
+  transform: rotate(90deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="7"] {
+  height: 150px;
+  transform: rotate(105deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="8"] {
+  height: 150px;
+  transform: rotate(120deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="9"] {
+  height: 150px;
+  transform: rotate(135deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="10"] {
+  height: 150px;
+  transform: rotate(150deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="11"] {
+  height: 150px;
+  transform: rotate(165deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="12"] {
+  height: 150px;
+  transform: rotate(180deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="13"] {
+  height: 150px;
+  transform: rotate(195deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="14"] {
+  height: 150px;
+  transform: rotate(210deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="15"] {
+  height: 150px;
+  transform: rotate(225deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="16"] {
+  height: 150px;
+  transform: rotate(240deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="17"] {
+  height: 150px;
+  transform: rotate(255deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="18"] {
+  height: 150px;
+  transform: rotate(270deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="19"] {
+  height: 150px;
+  transform: rotate(285deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="20"] {
+  height: 150px;
+  transform: rotate(300deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="21"] {
+  height: 150px;
+  transform: rotate(315deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="22"] {
+  height: 150px;
+  transform: rotate(330deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular > *[data-idx="23"] {
+  height: 150px;
+  transform: rotate(345deg) scaleX(0.95);
+  transform-origin: bottom center;
+  line-height: 0;
+}
+.circular--solid {
+  --scale: 0.9;
+  --shadow-color: #d5d5d5;
+}
+.circular--solid .text {
+  color: var(--shadow-color);
+}
+
+.rotate {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  --delay: 0;
+  -webkit-animation: rotate 5s ease-in-out alternate infinite;
+  animation: rotate 5s ease-in-out alternate infinite;
+  -webkit-animation-delay: var(--delay);
+  animation-delay: var(--delay);
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .rotate {
+    top: 550px;
+    left: 47%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rotate {
+    top: 700px;
+    left: 47%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .rotate {
+    display: none;
+  }
+}
