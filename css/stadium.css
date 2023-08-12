@@ -13,10 +13,10 @@
 /*  This is for styling the main container that holds everything */
 
 #container {
-  height: 120vh;
+  height: auto;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/miamiNight.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/miamiNight2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,78 +24,8 @@
   overflow: hidden;
 }
 
-/* This styles the navbar and its contents */
-
-#navbar {
-  z-index: 2;
-  height: 60px;
-  width: 100%;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
-  background: #00caff;
-  background: linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
-  background: -webkit-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
-  background: -moz-linear-gradient(316deg, #00caff 0%, #ffa2f2 80%);
-}
-
-/* This styles the logo in the navbar */
-
-#navbar #logo {
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  left: 3%;
-  top: -5px;
-}
-
-/* This styles the logo image to be used in the navbar */
-
-#navbar #logo img {
-  object-fit: cover;
-  height: 60px;
-  width: auto;
-}
-
-/* This styles the unlisted links in the navbar */
-
-#navbar ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 5%;
-  top: 0;
-}
-
-/* This changes the appearance of the listed links in the navbar */
-
-#navbar ul li {
-  height: 60px;
-  width: 80px;
-  margin: 0 30px;
-  display: grid;
-  place-items: center;
-  color: antiquewhite;
-}
-#navbar ul li a {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration-line: none;
-  color: rgb(0, 0, 0);
-  transition: 0.3s ease-in-out;
-}
-
-/* This sets the hover action of the navbar links */
-
-#navbar ul li a:hover {
-  color: rgb(255, 255, 255);
-}
-
 #icons {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   top: -100px;
   height: 290px;
@@ -123,7 +53,7 @@
   width: 50px;
   font-size: 30px;
   margin: 10px;
-  color: rgb(80, 174, 236);
+  color: rgb(255, 255, 255);
   border-radius: 25px;
   display: grid;
   place-items: center;
@@ -132,27 +62,26 @@
 }
 #icons #iconsLogo i:hover {
   color: rgb(255, 255, 255);
-  transform: scale(1.2);
-}
-#icons #iconsLogo i:hover {
-  color: rgb(70, 185, 219);
   box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
   transform: scale(1.2);
 }
 
 .videoMiami {
-  position: absolute;
-  top: 100px;
+  margin-top: 100px;
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+.videoMiami video {
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #2d98b3;
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.795);
 }
 
 .btnSound {
   z-index: 2;
   position: absolute;
-  top: 0;
-  left: 0;
+
   background-color: rgb(3, 3, 32);
   color: rgb(80, 174, 236);
   border-radius: 0 0 15px 0;
@@ -160,268 +89,88 @@
   margin-bottom: 10px;
 }
 
-/* .frame {
-  position: absolute;
-  top: 900px;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  overflow: hidden;
-  background: #e16e6c00;
-  color: #000000;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.rowTextCarousel {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.circle {
-  position: absolute;
-  z-index: 10;
-  height: 50px;
-  width: 50px;
-  top: 200px;
-  left: 175px;
-  background: #000000;
-  border-radius: 50%;
-  animation: circle 1s ease-in-out;
-  animation-fill-mode: forwards;
+.row-carousel {
+  width: 70vw;
+  max-height: 700px;
+  object-fit: cover center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
-.line {
-  position: absolute;
-  z-index: 10;
-  width: 150px;
-  height: 4px;
-  top: 223px;
-  background: #000000;
-  transform: scaleX(0);
-
-  &.left {
-    left: 50px;
-    transform-origin: 100% 50%;
-    animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
-  }
-
-  &.right {
-    right: 50px;
-    transform-origin: 0% 50%;
-    animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s;
-  }
+.carousel-inner {
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #2d98b3;
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.795);
 }
 
-.bracket {
-  position: absolute;
-  z-index: 10;
-  height: 120px;
-  width: 4px;
-  top: 165px;
-  background: #000000;
-  animation: bracket 0.4s ease-out 1.7s;
-  animation-fill-mode: both;
+.imgCarousel {
+  width: 80vw;
+  max-height: 700px;
+  object-fit: cover;
+}
 
-  &:before,
-  &:after {
+.carousel-item {
+  transition: transform 0.5s ease; /* Ajustez 0.5s à la durée de votre choix */
+}
+
+@media screen and (max-width: 991px) {
+  #icons {
     position: absolute;
-    display: block;
-    content: "";
-    width: 25px;
-    height: 4px;
-    background: #000000;
+    height: 100px;
+    width: 140px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-92%);
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
   }
-
-  &.left {
-    left: 50px;
-
-    &:before {
-      top: 0;
-      left: 0;
-      transform-origin: 0% 50%;
-      animation: bracket-line 0.2s ease-out 2.1s;
-      animation-fill-mode: both;
-    }
-
-    &:after {
-      bottom: 0;
-      left: 0;
-      transform-origin: 0% 50%;
-      animation: bracket-line 0.2s ease-out 2.1s;
-      animation-fill-mode: both;
-    }
+  #icons #iconsLogo {
+    height: 80px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
   }
-
-  &.right {
-    right: 50px;
-
-    &:before {
-      top: 0;
-      right: 0;
-      transform-origin: 100% 50%;
-      animation: bracket-line 0.2s ease-out 2.1s;
-      animation-fill-mode: both;
-    }
-
-    &:after {
-      bottom: 0;
-      right: 0;
-      transform-origin: 100% 50%;
-      animation: bracket-line 0.2s ease-out 2.1s;
-      animation-fill-mode: both;
-    }
+  .videoMiami {
+    width: 95vw;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
-.big {
-  position: absolute;
-  z-index: 5;
-  top: 173px;
-  width: 400px;
-  text-align: center;
-  font-weight: 800;
-  font-size: 50px;
-  color: #000000;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-
-.hide {
-  position: absolute;
-  z-index: 7;
-  width: 400px;
-  height: 50px;
-  background: #e16e6c00;
-  left: 0;
-  animation: reveal 0.4s ease-out 1.7s;
-  animation-fill-mode: both;
-
-  &.top {
-    bottom: 49%;
-    transform-origin: 50% 0%;
+@media screen and (max-width: 767px) {
+  #container {
+    min-height: 100vh;
+  }
+  .btnSound {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffa2f2;
+    color: white;
+  }
+  .videoMiami {
+    margin-top: 190px;
+    width: 95vw;
+  }
+  .row-carousel {
+    width: 95vw;
   }
 
-  &.bottom {
-    top: 49%;
-    transform-origin: 50% 100%;
+  .imgCarousel {
+    width: 95vw;
+    max-height: 250px;
+    object-fit: cover;
   }
 }
-
-.small {
-  position: absolute;
-  z-index: 10;
-  width: 400px;
-  text-align: center;
-  left: 0;
-  font-weight: 300;
-  font-size: 30px;
-  color: #000000;
-  line-height: 30px;
-  text-transform: uppercase;
-
-  &.top {
-    top: 140px;
-    animation: small-top 0.5s ease-out 2.2s;
-    animation-fill-mode: both;
-  }
-
-  &.bottom {
-    bottom: 85px;
-    animation: small-bottom 0.5s ease-out 2.2s;
-    animation-fill-mode: both;
-  }
-}
-
-@keyframes circle {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  90%,
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes lines {
-  0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
-
-@keyframes line-left {
-  0% {
-    transform-origin: 100% 50%;
-  }
-  50%,
-  100% {
-    transform-origin: 0% 50%;
-  }
-}
-
-@keyframes line-right {
-  0% {
-    transform-origin: 0% 50%;
-  }
-  50%,
-  100% {
-    transform-origin: 100% 50%;
-  }
-}
-
-@keyframes bracket {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes bracket-line {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes reveal {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
-  }
-}
-
-@keyframes small-top {
-  0% {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes small-bottom {
-  0% {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} */

@@ -1,0 +1,165 @@
+/* The webpage overall styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,300);
+
+/*  This is for styling the main container that holds everything */
+
+#container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/stadiumHallFame.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#icons {
+  position: absolute;
+  height: 100px;
+  width: 140px;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-82%);
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+#icons #iconsLogo {
+  height: 80px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* This styles the social media icons logos images*/
+
+#icons #iconsLogo i {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#icons #iconsLogo i:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+
+.row-players {
+  margin-top: 150px;
+}
+
+.frame {
+  width: 300px;
+  height: 400px;
+  margin-top: 50px;
+  border-radius: 15px;
+  background: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.border {
+  border-radius: 15px;
+}
+
+.center {
+  width: 300px;
+  height: 400px;
+}
+
+.frame svg {
+  width: 300px;
+  height: 400px;
+}
+
+.button img {
+  position: relative;
+  top: 3px;
+  left: -290px;
+  width: 270px;
+  height: 370px;
+  object-fit: cover;
+}
+
+.subcard {
+  background-color: #000000a1;
+  position: relative;
+  top: -130px;
+  left: 15px;
+  width: 270px;
+  height: 118px;
+  object-fit: cover;
+  transition: 0.8s ease-in-out;
+}
+
+.subcard h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  margin-left: 25px;
+  letter-spacing: 2px;
+}
+.subcard h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  margin-left: 25px;
+  letter-spacing: 2px;
+}
+
+.subcard .text-bold {
+  font-weight: bold;
+}
+
+.button:hover .subcard {
+  height: 373px;
+  transform: translateY(-255px);
+}
+.button:hover .subcard .red {
+  color: rgb(255, 125, 244);
+  transition: 0.8s ease-in-out;
+}
+
+.button {
+  width: 900px;
+  height: 500px;
+  cursor: pointer;
+}
+.button .border {
+  fill: none;
+  stroke-width: 1;
+}
+.button .bg-line {
+  fill: rgb(0, 0, 0);
+  stroke: #ff91f0;
+  transition: all 1s ease-in-out;
+}
+.button .hl-line {
+  stroke: #77e4ff;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 10;
+  transition: all 1s ease-in-out;
+}
+.button:hover .bg-line {
+}
+.button:hover .hl-line {
+  stroke-dashoffset: -480;
+}

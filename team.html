@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIAMI HEAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id="container" class="container-fluid">
+      <!-- Navbar container -->
+      <div class="row">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid d-flex justify-content-center">
+            <div id="navbar">
+              <div id="logo">
+                <a href="index.html">
+                  <img class="imgLogo" src="assets/logo.png" alt="logo" />
+                </a>
+              </div>
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse"
+                id="navbarText"
+                style="z-index: 9999"
+              >
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a href="team.html">TEAM</a></li>
+                  <li class="nav-item"><a href="stadium.html">STADIUM</a></li>
+                  <li class="nav-item"><a href="#">SHOP</a></li>
+                  <li class="nav-item"><a href="#">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- This is for holding some company's social media icons and related links -->
+      <div class="row">
+        <div id="icons">
+          <div id="iconsLogo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row row-players">
+        <div
+          class="col-12 col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center"
+        >
+          <div class="frame">
+            <div class="center">
+              <div class="button" onclick="void(0);">
+                <svg
+                  width="300"
+                  height="400"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="bg-line"
+                  />
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="hl-line"
+                  />
+                </svg>
+                <img src="./assets/team/adebayo.jpg" alt="" />
+                <div class="subcard">
+                  <h1 class="pt-3 red text-bold">BAM</h1>
+                  <h1 class="red text-bold">ADEBAYO</h1>
+                  <h2 class="pb-3">CENTER-FORWARD</h2>
+                  <h2>HEIGHT</h2>
+                  <h2 class="text-bold">6'9</h2>
+                  <h2>WEIGHT</h2>
+                  <h2 class="text-bold">255LBS</h2>
+                  <h2>DOB</h2>
+                  <h2 class="text-bold">07/18/1997</h2>
+                  <h2>PRIOR TO NBA</h2>
+                  <h2 class="text-bold">KENTUCKY</h2>
+                  <h2>COUNTRY</h2>
+                  <h2 class="text-bold">USA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center"
+        >
+          <div class="frame">
+            <div class="center">
+              <div class="button" onclick="void(0);">
+                <svg
+                  width="300"
+                  height="400"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="bg-line"
+                  />
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="hl-line"
+                  />
+                </svg>
+                <img src="./assets/team/bouyea.jpg" alt="" />
+                <div class="subcard">
+                  <h1 class="pt-3 red text-bold">JAMAREE</h1>
+                  <h1 class="red text-bold">BOUYEA</h1>
+                  <h2 class="pb-3">GUARD</h2>
+                  <h2>HEIGHT</h2>
+                  <h2 class="text-bold">6'2</h2>
+                  <h2>WEIGHT</h2>
+                  <h2 class="text-bold">180LBS</h2>
+                  <h2>DOB</h2>
+                  <h2 class="text-bold">06/27/1999</h2>
+                  <h2>PRIOR TO NBA</h2>
+                  <h2 class="text-bold">SAN FRANCISCO</h2>
+                  <h2>COUNTRY</h2>
+                  <h2 class="text-bold">USA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center"
+        >
+          <div class="frame">
+            <div class="center">
+              <div class="button" onclick="void(0);">
+                <svg
+                  width="300"
+                  height="400"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="bg-line"
+                  />
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="hl-line"
+                  />
+                </svg>
+                <img src="./assets/team/bryant.jpg" alt="" />
+                <div class="subcard">
+                  <h1 class="pt-3 red text-bold">THOMAS</h1>
+                  <h1 class="red text-bold">BRYANT</h1>
+                  <h2 class="pb-3">CENTER-FORWARD</h2>
+                  <h2>HEIGHT</h2>
+                  <h2 class="text-bold">6'10</h2>
+                  <h2>WEIGHT</h2>
+                  <h2 class="text-bold">248LBS</h2>
+                  <h2>DOB</h2>
+                  <h2 class="text-bold">07/31/1997</h2>
+                  <h2>PRIOR TO NBA</h2>
+                  <h2 class="text-bold">INDIANA</h2>
+                  <h2>COUNTRY</h2>
+                  <h2 class="text-bold">USA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center"
+        >
+          <div class="frame">
+            <div class="center">
+              <div class="button" onclick="void(0);">
+                <svg
+                  width="300"
+                  height="400"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="bg-line"
+                  />
+                  <rect
+                    x="5"
+                    y="-85"
+                    width="170"
+                    height="230"
+                    stroke-width="3"
+                    rx="5"
+                    ry="5"
+                    class="hl-line"
+                  />
+                </svg>
+                <img src="./assets/team/butler.jpg" alt="" />
+                <div class="subcard">
+                  <h1 class="pt-3 red text-bold">JIMMY</h1>
+                  <h1 class="red text-bold">BUTLER</h1>
+                  <h2 class="pb-3">FORWARD</h2>
+                  <h2>HEIGHT</h2>
+                  <h2 class="text-bold">6'7</h2>
+                  <h2>WEIGHT</h2>
+                  <h2 class="text-bold">230LBS</h2>
+                  <h2>DOB</h2>
+                  <h2 class="text-bold">09/14/1989</h2>
+                  <h2>PRIOR TO NBA</h2>
+                  <h2 class="text-bold">MARQUETTE</h2>
+                  <h2>COUNTRY</h2>
+                  <h2 class="text-bold">USA</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9468c33ba3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

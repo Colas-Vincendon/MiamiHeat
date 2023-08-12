@@ -1,7 +1,7 @@
 /* This styles the navbar and its contents */
 
 #navbar {
-  z-index: 2;
+  z-index: 3;
   height: 60px;
   width: 100%;
   position: absolute;
@@ -59,7 +59,7 @@
   font-weight: bold;
   text-decoration-line: none;
   color: rgb(0, 0, 0);
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 /* This sets the hover action of the navbar links */
