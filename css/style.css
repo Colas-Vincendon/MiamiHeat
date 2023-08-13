@@ -99,12 +99,12 @@
   color: rgb(255, 255, 255);
   transform: skew(-18deg) rotate(-6deg);
   transition: 1s ease-in-out;
-  text-shadow: 1px 1px 1px whitesmoke, 2px 2px 1px whitesmoke,
-    3px 3px 1px whitesmoke, 4px 4px 1px whitesmoke, 5px 5px 1px whitesmoke,
-    6px 6px 1px whitesmoke, 7px 7px 1px whitesmoke, 8px 8px 1px whitesmoke,
-    9px 9px 1px whitesmoke, 10px 10px 1px whitesmoke, 11px 11px 1px whitesmoke,
-    12px 12px 1px whitesmoke;
+  text-shadow: 1px 1px 1px black, 2px 2px 1px black, 3px 3px 1px black,
+    4px 4px 1px black, 5px 5px 1px black, 6px 6px 1px black, 7px 7px 1px black,
+    8px 8px 1px black, 9px 9px 1px black, 10px 10px 1px black,
+    11px 11px 1px black, 12px 12px 1px black;
 }
+
 #content .shadow-change-color {
   position: absolute;
   top: 2px;
@@ -117,10 +117,6 @@
   color: rgb(255, 255, 255);
   transform: skew(-18deg) rotate(-6deg);
   transition: 0.2s ease-in-out;
-  text-shadow: 1px 1px 1px black, 2px 2px 1px black, 3px 3px 1px black,
-    4px 4px 1px black, 5px 5px 1px black, 6px 6px 1px black, 7px 7px 1px black,
-    8px 8px 1px black, 9px 9px 1px black, 10px 10px 1px black,
-    11px 11px 1px black, 12px 12px 1px black;
 }
 
 /* This styles the paragraph in the 3D description*/
