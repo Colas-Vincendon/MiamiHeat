@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIAMI HEAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id="container" class="container-fluid">
+      <!-- Navbar container -->
+      <div class="row">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid d-flex justify-content-center">
+            <div id="navbar">
+              <div id="logo">
+                <a href="index.html">
+                  <img class="imgLogo" src="assets/logo.png" alt="logo" />
+                </a>
+              </div>
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse"
+                id="navbarText"
+                style="z-index: 9999"
+              >
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a href="team.html">TEAM</a></li>
+                  <li class="nav-item"><a href="stadium.html">STADIUM</a></li>
+                  <li class="nav-item"><a href="shop.html">SHOP</a></li>
+                  <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row formContact">
+        <div class="formulaireContact">
+          <div class="text-center">
+            <h1>Formulaire de contact</h1>
+          </div>
+          <div class="container-fluid">
+            <div class="row d-flex">
+              <div class="col-12 col-md-3"></div>
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center text-center"
+              >
+                <form method="POST" action="../back/sendEmail.php">
+                  <div>
+                    <label class="my-1" for="nom">Nom *</label>
+                    <input
+                      value=""
+                      data-msg-required="Votre nom"
+                      maxlength="100"
+                      class="form-control mb-3 mx-auto"
+                      name="nom"
+                      id="nom"
+                      required="required"
+                      aria-required="true"
+                      type="text"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="my-1" for="email">Adresse e-mail *</label>
+                    <input
+                      value=""
+                      data-msg-required="Votre email"
+                      data-msg-email="Adresse email non valide"
+                      maxlength="100"
+                      class="form-control mb-3 mx-auto"
+                      name="email"
+                      id="email"
+                      required="required"
+                      aria-required="true"
+                      type="email"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="my-1" for="sujet">Sujet *</label>
+                    <input
+                      value=""
+                      data-msg-required="Sujet"
+                      maxlength="100"
+                      class="form-control mb-3 mx-auto"
+                      name="sujet"
+                      id="sujet"
+                      required="required"
+                      aria-required="true"
+                      type="text"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="my-1" for="message">Message *</label>
+                    <textarea
+                      maxlength="5000"
+                      data-msg-required="Please enter your message."
+                      rows="10"
+                      class="form-control mb-3 mx-auto"
+                      name="message"
+                      id="message"
+                      required="required"
+                      aria-required="true"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-control mb-3 mx-auto text-center">
+                    <input
+                      value="1"
+                      name="rgpd"
+                      type="checkbox"
+                      required="required"
+                    />
+                    <span class="small"
+                      >En soumettant ce formulaire, j'accepte que les
+                      informations saisies soient exploitées dans le cadre de la
+                      relation commerciale qui peut en découler.
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn btn-blue" type="submit">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 col-md-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

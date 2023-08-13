@@ -61,8 +61,8 @@
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item"><a href="team.html">TEAM</a></li>
                   <li class="nav-item"><a href="stadium.html">STADIUM</a></li>
-                  <li class="nav-item"><a href="#">SHOP</a></li>
-                  <li class="nav-item"><a href="#">CONTACT</a></li>
+                  <li class="nav-item"><a href="shop.html">SHOP</a></li>
+                  <li class="nav-item"><a href="contact.html">CONTACT</a></li>
                 </ul>
               </div>
             </div>
@@ -84,6 +84,7 @@
           <h1 class="monoton">VIDEO</h1>
           <button id="toggleSound" class="btn btnSound">Activer le son</button>
           <video
+            controls
             width="100%"
             height="auto"
             object-fit="cover"
@@ -208,6 +209,25 @@
           video.muted = true;
           toggleSoundButton.innerText = "Activer le son";
         }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let videoElement = document.querySelector("video");
+
+        function setVideoControls() {
+          if (window.innerWidth <= 1199) {
+            videoElement.setAttribute("controls", "");
+          } else {
+            videoElement.removeAttribute("controls");
+          }
+        }
+
+        // Au chargement initial de la page
+        setVideoControls();
+
+        // À chaque changement de taille de fenêtre
+        window.addEventListener("resize", setVideoControls);
       });
     </script>
   </body>
