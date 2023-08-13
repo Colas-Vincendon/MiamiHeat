@@ -73,15 +73,13 @@
   margin-right: 10vw;
 }
 .videoMiami video {
-  border-radius: 20px 20px 20px 20px;
-  border: 3px solid #2d98b3;
-  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.795);
+  margin-top: 50px;
 }
 
 .btnSound {
   z-index: 2;
   position: absolute;
-
+  top: 345px;
   background-color: rgb(3, 3, 32);
   color: rgb(80, 174, 236);
   border-radius: 0 0 15px 0;
@@ -97,6 +95,19 @@
   margin-bottom: 40px;
 }
 
+h1.monoton {
+  padding-top: 2rem;
+  margin-block: 0;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Monoton", serif;
+  font-size: 3rem;
+  font-weight: light;
+  text-align: center;
+  text-shadow: hsl(220deg 100% 80%) 0px 0px 3vw, hsl(220deg 100% 80%) 0 65vh 4vw;
+}
+
 .row-carousel {
   width: 70vw;
   max-height: 700px;
@@ -104,12 +115,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
-
-.carousel-inner {
-  border-radius: 20px 20px 20px 20px;
-  border: 3px solid #2d98b3;
-  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.795);
 }
 
 .imgCarousel {
@@ -146,6 +151,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .btnSound {
+    position: absolute;
+    top: 395px;
+  }
 }
 @media screen and (max-width: 767px) {
   #container {
@@ -153,7 +162,7 @@
   }
   .btnSound {
     position: absolute;
-    top: 160px;
+    top: 340px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px 10px 10px 10px;
@@ -161,8 +170,11 @@
     color: white;
   }
   .videoMiami {
-    margin-top: 190px;
+    margin-top: 120px;
     width: 95vw;
+  }
+  .videoMiami video {
+    margin-top: 90px;
   }
   .row-carousel {
     width: 95vw;

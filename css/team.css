@@ -8,6 +8,7 @@
   color: white;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800,300);
 
 /*  This is for styling the main container that holds everything */
@@ -61,8 +62,28 @@
   transform: scale(1.2);
 }
 
+.rowGif {
+  margin-top: 120px;
+}
+
 .row-players {
-  margin-top: 150px;
+  margin-top: 250px;
+}
+.row-players h1.players {
+  padding-top: 2rem;
+  margin-block: 0;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(58, 177, 233);
+  font-family: "Monoton", serif;
+  font-size: 3rem;
+  font-weight: light;
+  text-align: center;
+  text-shadow: hsl(220deg 100% 80%) 0px 0px 3vw, hsl(220deg 100% 80%) 0 65vh 4vw;
+}
+
+.break {
+  height: 250px;
 }
 
 .frame {
@@ -125,8 +146,48 @@
   letter-spacing: 2px;
 }
 
+.subcard .opacity {
+  opacity: 0;
+}
+
+.subcard .shop {
+  position: relative;
+  top: -80px;
+  left: 190px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: rgb(255, 116, 248);
+  border: 2px solid rgb(255, 158, 250);
+}
+
+.shop a {
+  text-decoration-line: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.shop p {
+  letter-spacing: 1px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.subcard i {
+  margin-top: 8px;
+  background-color: rgb(255, 116, 248);
+  font-size: 2em;
+}
+
 .subcard .text-bold {
   font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.subcard .grey {
+  color: gainsboro;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .button:hover .subcard {
@@ -136,6 +197,14 @@
 .button:hover .subcard .red {
   color: rgb(255, 125, 244);
   transition: 0.8s ease-in-out;
+}
+.button:hover .subcard .blue {
+  color: #77cdff;
+  transition: 0.8s ease-in-out;
+}
+.button:hover .subcard .opacity {
+  opacity: 1;
+  transition: 2s ease-in-out;
 }
 
 .button {
@@ -153,7 +222,7 @@
   transition: all 1s ease-in-out;
 }
 .button .hl-line {
-  stroke: #77e4ff;
+  stroke: #77cdff;
   stroke-dasharray: 400;
   stroke-dashoffset: 10;
   transition: all 1s ease-in-out;
