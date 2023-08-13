@@ -228,6 +228,7 @@ button.enter {
   top: 60px;
   left: -60px;
   border: none;
+  pointer-events: none;
 }
 
 @keyframes slideInFromLeft {
