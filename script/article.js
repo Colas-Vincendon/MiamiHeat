@@ -96,9 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             <input style="color:black;" type="number" id="quantity" name="quantity" min="1" value="1">
 
                             <button class="cart-button">
-                            <span class="add-to-cart">Add to cart</span>
-                            <span class="added">Added</span>
-                        </button>
+                                <span class="add-to-cart">Add to cart</span>
+                                <span class="added">Added</span>
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-box"></i>
+                            </button>
                         </div>
                         </div>
                   </div>
@@ -106,7 +108,11 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <script src="./script/zoom.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+            <script src="./script/cart.js"></script>
+            <script
+            src="https://kit.fontawesome.com/a5608ed8bc.js"
+            crossorigin="anonymous"
+            ></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
           </body>
