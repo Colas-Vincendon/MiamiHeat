@@ -68,17 +68,19 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="row">
                 <div class="col-12 col-lg-7 article">
                   <div class="justify-content-center text-center">
-                    <img style="height:auto; max-width:700px ; width:100%" class="img-fluid" src="${imageSrc}" alt="${titleText}">
+                  <div class="zoom-container">
+                    <img id="myImage" style="height:auto; max-width:700px ; width:100%; margin: 0 auto; border-radius:15px; border: 2px solid lightgrey; background-color:white;" class="img-fluid" src="${imageSrc}" alt="${titleText}">
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-5 cart">
                   <div class="justify-content-center text-center">
-                    <h2 class="text-center px-3">${titleText}</h2>
-                    <p class='blue'>Pay in 4 interest-free installments for orders over $50.00 with <img style="height:30px;" src="./assets/shop/pay.png"></p>
-                    <h3>$38.00</h3>
+                    <h2 class="text-center px-3" style="font-family:impact;margin-top:30px; margin-bottom:50px; letter-spacing:1px;">${titleText}</h2>
+                    <p class='blue' style="font-family:impact; margin-bottom:50px; letter-spacing:1px;">Pay in 4 interest-free installments for orders over $50.00 with <img style="height:30px;" src="./assets/shop/pay.png"></p>
+                    <h3 style="font-family:impact; margin-bottom:50px">Price : $38.00</h3>
                     <div class="product-container">
                         <div class="product-options">
-                            <label for="size">Taille :</label>
+                            <label for="size">Size :</label>
                             <select id="size" name="size">
                             <option style="color:black;" value="small">S</option>
                             <option style="color:black;" value="medium">M</option>
@@ -87,16 +89,22 @@ document.addEventListener("DOMContentLoaded", function () {
                             <option style="color:black;" value="xxlarge">XXL</option>
                             </select>
 
-                            <label for="quantity">Quantité :</label>
+                            <label for="quantity">Quantity :</label>
                             <input style="color:black;" type="number" id="quantity" name="quantity" min="1" value="1">
 
-                            <button class="add-to-cart-btn">Ajouter au panier</button>
+                            <button class="cart-button">
+	<span class="add-to-cart">Add to cart</span>
+	<span class="added">Added</span>
+	<i class="fas fa-shopping-cart"></i>
+	<i class="fas fa-box"></i>
+</button>
                         </div>
                         </div>
                   </div>
                 </div>
               </div>
             </div>
+            <script src="./script/zoom.js"></script>
           </body>
         </html>
         `);
