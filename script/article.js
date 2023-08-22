@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const imageSrc = e.currentTarget.querySelector("img").src;
       const titleText = e.currentTarget.querySelector("p").textContent;
+      const price = e.currentTarget.querySelector("h5").textContent;
 
       const newWindow = window.open("", "_blank");
 
@@ -79,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="justify-content-center text-center">
                     <h2 class="text-center px-3" style="font-family:impact;margin-top:30px; margin-bottom:50px; letter-spacing:1px;">${titleText}</h2>
                     <p class='blue' style="font-family:impact; margin-bottom:50px; letter-spacing:1px;">Pay in 4 interest-free installments for orders over $50.00 with <img style="height:30px;" src="./assets/shop/pay.png"></p>
-                    <h3 style="font-family:impact; margin-bottom:50px">Price : $38.00</h3>
+                    <h3 style="font-family:impact; margin-bottom:50px">${price}</h3>
                     <div class="product-container">
                         <div class="product-options">
                             <label for="size">Size :</label>
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <script src="./script/zoom.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
           </body>
         </html>
         `);
