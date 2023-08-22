@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="css/shop.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,7 +72,46 @@
       </div>
       <div class="row shop">
         <h1 class="monoton">BEST SELLERS</h1>
+        <div id="containerShop">
+          <div id="slider-container">
+            <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+              <div class="slide">
+                <span><img src="./assets/shop/blackCoat.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/blackShirt.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/jerseyButler.webp" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/womanBlackCoat.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/wadeJacket.webp" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/greyShirt.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/brassard.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/blackCoat.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/blackCoat.png" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./assets/shop/blackCoat.png" /></span>
+              </div>
+            </div>
+            <span onclick="slideLeft()" class="btn"></span>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="./script/carousel.js"></script>
   </body>
 </html>
