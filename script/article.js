@@ -72,11 +72,27 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
                 <div class="col-12 col-lg-5 cart">
-                  <div class="justify-content-center">
+                  <div class="justify-content-center text-center">
                     <h2 class="text-center px-3">${titleText}</h2>
                     <p class='blue'>Pay in 4 interest-free installments for orders over $50.00 with <img style="height:30px;" src="./assets/shop/pay.png"></p>
                     <h3>$38.00</h3>
+                    <div class="product-container">
+                        <div class="product-options">
+                            <label for="size">Taille :</label>
+                            <select id="size" name="size">
+                            <option style="color:black;" value="small">S</option>
+                            <option style="color:black;" value="medium">M</option>
+                            <option style="color:black;" value="large">L</option>
+                            <option style="color:black;" value="xlarge">XL</option>
+                            <option style="color:black;" value="xxlarge">XXL</option>
+                            </select>
 
+                            <label for="quantity">Quantité :</label>
+                            <input style="color:black;" type="number" id="quantity" name="quantity" min="1" value="1">
+
+                            <button class="add-to-cart-btn">Ajouter au panier</button>
+                        </div>
+                        </div>
                   </div>
                 </div>
               </div>
