@@ -1,0 +1,14 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.rowMarginTop {
+  height: 140px;
+  width: 100%;
+}
+p.blue {
+  color: rgb(126, 186, 255);
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
