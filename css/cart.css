@@ -154,3 +154,11 @@ p.price {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .cart-item {
+    flex-direction: column;
+  }
+  button.delete {
+    transform: translateX(22px);
+  }
+}

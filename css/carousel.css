@@ -87,6 +87,7 @@ body {
 
 .image-container:hover .zoomable {
   transform: scale(1.05);
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1100px) {

@@ -44,6 +44,9 @@ function setParams2(w) {
   if (currentPosition2 < slidesCount2) {
     buttons2[1].classList.remove("inactive");
   }
+  if (currentPosition >= slidesCount2) {
+    buttons[1].classList.add("inactive");
+  }
 }
 
 setParams2();
@@ -75,5 +78,3 @@ function slideLeft2() {
     buttons2[0].classList.remove("inactive");
   }
 }
-
-window.addEventListener("resize", checkWidth2);
