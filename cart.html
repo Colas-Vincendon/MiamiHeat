@@ -124,7 +124,8 @@
         let cartItemsContainer = document.getElementById("cartItems");
 
         if (cart.length === 0) {
-          cartItemsContainer.innerHTML = "<p>Votre panier est vide.</p>";
+          cartItemsContainer.innerHTML =
+            "<p style='font-size:1.2rem; font-weight:bold;' class='text-center'>Votre panier est vide.</p>";
         } else {
           cart.forEach((item, index) => {
             // Créez un élément div pour chaque article
@@ -147,7 +148,7 @@
           });
 
           // Ajoutez un écouteur d'événement pour chaque bouton "Supprimer"
-          document.querySelectorAll(".remove-item").forEach((button) => {
+          document.querySelectorAll(".delete").forEach((button) => {
             button.addEventListener("click", function (e) {
               let index = e.currentTarget.getAttribute("data-index");
 
@@ -168,12 +169,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-        let totalItems = cart.length;
+        let totalItems = 0; // initialisez à 0
         let totalPrice = 0;
 
         cart.forEach((item) => {
-          let itemPrice = parseFloat(item.price.replace("$", "")); // Conversion du prix en nombre (en supprimant le symbole dollar)
-          totalPrice += itemPrice;
+          let itemPrice = parseFloat(item.price.replace("$", ""));
+
+          totalItems += parseInt(item.quantity); // Convertissez en nombre avant d'additionner
+          totalPrice += itemPrice * parseInt(item.quantity); // Convertissez également ici pour être sûr
         });
 
         // Affichage des valeurs dans le récapitulatif

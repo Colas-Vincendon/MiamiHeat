@@ -198,3 +198,25 @@ p.blue {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 991px) {
+  #container-modal {
+    height: auto;
+  }
+  .modal-content {
+    max-height: 200vh; /* La hauteur maximale est celle de la fenêtre du navigateur */
+    overflow-y: auto; /* Ajoutez une barre de défilement si le contenu est trop long */
+  }
+  .modal-dialog {
+    max-height: 200vh;
+    overflow-y: initial; /* Pour garantir que la barre de défilement n'apparaît que pour .modal-content et non pour .modal-dialog */
+  }
+  .modal-open .modal {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .modal-body {
+    max-height: auto;
+    overflow-y: auto;
+  }
+}
