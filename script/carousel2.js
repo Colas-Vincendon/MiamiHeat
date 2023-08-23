@@ -12,6 +12,7 @@ var prevKeyActive2 = false;
 var nextKeyActive2 = false;
 
 window.addEventListener("resize", checkWidth2);
+window.dispatchEvent(new Event("resize"));
 
 function checkWidth2() {
   containerWidth2 = container2.offsetWidth;
@@ -44,7 +45,7 @@ function setParams2(w) {
   if (currentPosition2 < slidesCount2) {
     buttons2[1].classList.remove("inactive");
   }
-  if (currentPosition >= slidesCount2) {
+  if (currentPosition2 >= slidesCount2) {
     buttons[1].classList.add("inactive");
   }
 }
