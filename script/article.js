@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <label for="quantity">Quantity :</label>
                         <input style="color:black;" type="number" id="quantity" name="quantity" min="1" value="1">
 
-              <button class="cart-button add-to-cart" 
+                        <button class="cart-button add-to-cart" 
                             data-title="${titleText}" 
                             data-price="${price}"
                             data-image="${imageSrc}">
@@ -68,22 +68,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <span class="added">Added</span>
                                 <i class="fas fa-shopping-cart"></i>
                                 <i class="fas fa-box"></i>
-                            </button>
+                       </button>
               
-              </div>
-              </div>
+                    </div>
+                 </div>
               
         </div>
       </div>
     </div>
   </div>
-  <script src="./script/zoom.js"></script>
   <script
   src="https://kit.fontawesome.com/a5608ed8bc.js"
   crossorigin="anonymous"
   ></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script/zoom.js"></script>
 
 </body>
 </html>
@@ -112,6 +112,37 @@ document.addEventListener("DOMContentLoaded", function () {
           localStorage.setItem("cart", JSON.stringify(cart));
           console.log("Product added to cart:", product);
         });
+
+      const img = document.getElementById("myImage");
+      const container = document.querySelector(".zoom-container");
+
+      container.addEventListener("mousemove", function (e) {
+        const rect = container.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const deltaX = (mouseX - centerX) * -0.5; // ajustez ce chiffre pour modifier l'intensité du déplacement
+        const deltaY = (mouseY - centerY) * -0.5; // ajustez ce chiffre pour modifier l'intensité du déplacement
+
+        img.style.transform = `scale(2) translate(${deltaX}px, ${deltaY}px)`; // scale(2) signifie un zoom de 200%
+      });
+
+      container.addEventListener("mouseleave", function () {
+        img.style.transform = "scale(1) translate(0, 0)";
+      });
+      const cartButtons = document.querySelectorAll(".cart-button");
+
+      cartButtons.forEach((button) => {
+        button.addEventListener("click", cartClick);
+      });
+
+      function cartClick() {
+        let button = this;
+        button.classList.add("clicked");
+      }
     });
   });
 });

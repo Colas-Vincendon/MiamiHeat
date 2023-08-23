@@ -79,3 +79,11 @@ h1.impact {
   font-weight: light;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  h1.impact {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
