@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIAMI HEAT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id="container" class="container-fluid">
+      <!-- Navbar container -->
+      <div class="row">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid d-flex justify-content-center">
+            <div id="navbar">
+              <div id="logo">
+                <a href="index.html">
+                  <img class="imgLogo" src="assets/logo.png" alt="logo" />
+                </a>
+              </div>
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse"
+                id="navbarText"
+                style="z-index: 9999"
+              >
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a href="team.html">TEAM</a></li>
+                  <li class="nav-item"><a href="stadium.html">STADIUM</a></li>
+                  <li class="nav-item"><a href="shop.html">SHOP</a></li>
+                  <li class="nav-item"><a href="contact.html">CONTACT</a></li>
+                  <li class="nav-item">
+                    <a href="cart.html"
+                      ><i
+                        class="fa-solid fa-cart-shopping"
+                        style="color: #000000; font-size: 1.4rem"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row rowCart">
+        <div class="col-12 col-lg-7">
+          <div id="cartItems" style="margin-top: 100px"></div>
+        </div>
+        <div class="col-12 col-lg-5"></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a5608ed8bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Récupérez la liste des articles du localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let cartItemsContainer = document.getElementById("cartItems");
+
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = "<p>Votre panier est vide.</p>";
+        } else {
+          cart.forEach((item, index) => {
+            // Créez un élément div pour chaque article
+            let cartItemDiv = document.createElement("div");
+            cartItemDiv.className = "cart-item"; // Ajoutez une classe pour le style
+
+            cartItemDiv.innerHTML = `
+        <img class="imageCart" src="${item.image}" alt="${item.title}" class="cart-item-image" />
+        <div class="cart-item-details">
+            <h4>${item.title}</h4>
+            <p>Size : ${item.size}</p>
+            <p>Quantity : ${item.quantity}</p>
+            <p class="price">${item.price}</p>
+        </div>
+        <button class="delete" data-index="${index}">Delete</button>
+      `;
+
+            // Ajoutez l'élément div à cartItemsContainer
+            cartItemsContainer.appendChild(cartItemDiv);
+          });
+
+          // Ajoutez un écouteur d'événement pour chaque bouton "Supprimer"
+          document.querySelectorAll(".remove-item").forEach((button) => {
+            button.addEventListener("click", function (e) {
+              let index = e.currentTarget.getAttribute("data-index");
+
+              // Supprimez l'article du tableau "cart"
+              cart.splice(index, 1);
+
+              // Mettez à jour le localStorage
+              localStorage.setItem("cart", JSON.stringify(cart));
+
+              // Rafraîchissez la page pour afficher le panier mis à jour
+              location.reload();
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

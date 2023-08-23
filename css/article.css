@@ -2,15 +2,37 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+#container-modal {
+  border: 2px solid rgb(134, 134, 134);
+  height: 800px;
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  overflow: hidden;
+}
+
 .rowMarginTop {
-  height: 140px;
+  height: 50px;
   width: 100%;
 }
+
+button.btnBack {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #ffa5f0;
+  color: #242424;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 p.blue {
-  color: rgb(126, 186, 255);
+  color: rgb(86, 165, 255);
   font-size: 1.5rem;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: 0 auto;
 }
 
 .product-container {
@@ -52,6 +74,7 @@ p.blue {
   border-radius: 15px;
   overflow: hidden;
   width: 95%;
+  max-width: 700px;
   height: auto;
   position: relative;
   transition: 1s ease-in-out;
