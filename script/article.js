@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="justify-content-center text-center">
                 <h2 class="text-center px-3" style="font-family:impact; margin-bottom:30px; letter-spacing:1px;">${titleText}</h2>
                 <p class='blue' style="font-family:impact; margin-bottom:30px; letter-spacing:1px;">Pay in 4 interest-free installments for orders over $50.00 with <img style="height:30px;" src="./assets/shop/pay.png"></p>
-                <h3 style="font-family:impact; margin-bottom:50px">${price}</h3>
+                <h3 style="font-family:impact; margin-bottom:50px">Price : $ ${price}</h3>
                 <div class="product-container">
                     <div class="product-options">
                         <label for="size">Size :</label>
