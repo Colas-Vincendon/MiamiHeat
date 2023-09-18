@@ -90,6 +90,6 @@ label {
 }
 .btn-blue:hover {
   transition: 300ms;
-  background-color: rgb(241, 129, 232);
+  background-color: rgb(235, 129, 226);
   color: #ffffff;
 }
